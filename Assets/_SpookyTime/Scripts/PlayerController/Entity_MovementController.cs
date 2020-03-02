@@ -17,15 +17,10 @@ public class Entity_MovementController : MonoBehaviour
     public AxisPriority m_priorityAxis;
     public float m_lerpTime;
     private Coroutine m_movementCoroutine;
-    public bool m_isMoving;
+    private bool m_moving;
     #endregion
 
     public float m_gridSize = .5f;
-
-    #region Movement Animation
-    
-    private bool m_moving;
-    #endregion
 
 
     public virtual void Start()
