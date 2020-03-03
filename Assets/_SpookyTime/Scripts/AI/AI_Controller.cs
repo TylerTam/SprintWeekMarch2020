@@ -51,15 +51,17 @@ public class AI_Controller : MonoBehaviour
             {
                 case AIStates.CHASE:
                     CalculatePathToPlayer();
+                    MoveAI();
 
                     break;
                 case AIStates.WANDER:
                     CalculatePathToRandomPoint();
+                    MoveAI();
                     break;
             }
         }
 
-        MoveAI();
+        
         
     }
 

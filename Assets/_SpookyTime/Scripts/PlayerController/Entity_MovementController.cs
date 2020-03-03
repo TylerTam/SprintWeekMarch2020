@@ -49,7 +49,19 @@ public class Entity_MovementController : MonoBehaviour
     public void MoveCharacter(Vector2 p_movement, float p_targetLerpTime)
     {
         if (m_moving) return;
+
         Vector2 priorityMovement = GetPriority(p_movement);
+
+        if (Mathf.Abs(priorityMovement.magnitude) > 0)
+        {
+            m_visualController.ChangeWalkingState(true);
+        }
+        else
+        {
+            m_visualController.ChangeWalkingState(false);
+        }
+
+
         Collider2D cols = Physics2D.OverlapCircle(transform.position + (Vector3)priorityMovement.normalized, .25f, m_terrainLayer);
         bool hit = false;
         if (cols != null)
@@ -109,8 +121,11 @@ public class Entity_MovementController : MonoBehaviour
 
         if ((Vector2)m_dirFacing != p_currentDir.normalized)
         {
-            //m_visualController.RotateSprite(m_dirFacing);
+
+            m_visualController.RotateSprite(p_currentDir.normalized);
+
         }
+
         m_dirFacing = p_currentDir.normalized;
         float m_currentMovementTimer = 0;
         float lerpTime = p_targetLerpTime;
@@ -130,6 +145,7 @@ public class Entity_MovementController : MonoBehaviour
         m_myCollider.transform.position = transform.position;
         m_movementCoroutine = null;
         m_moving = false;
+
     }
 
     public Vector3 GetCurrentForward()
