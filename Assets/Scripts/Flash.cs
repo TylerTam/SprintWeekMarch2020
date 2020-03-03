@@ -27,6 +27,8 @@ public class Flash : MonoBehaviour
     {
         if (Input.GetAxis("Jump")>0 && lightUI.value >=100)
         {
+            print("let there be light");
+
             lightUI.value = 0;
 
             //flashlight
@@ -52,11 +54,11 @@ public class Flash : MonoBehaviour
 
             //render flashlight
             print("render");
-            Debug.DrawLine(transform.position, transform.position + (eMC.GetCurrentForward() * wallDistance), Color.yellow);
+            Debug.DrawLine(transform.position, transform.position + (eMC.GetCurrentForward() * wallDistance) + Vector3.forward, Color.yellow);
             lr.positionCount = 2;
-            lr.SetPosition(0, transform.position);
-            lr.SetPosition(1, transform.position + (eMC.GetCurrentForward() * wallDistance));
-            StartCoroutine(DerenderLine(flashTime));
+            lr.SetPosition(0, transform.position + Vector3.forward*-1);
+            lr.SetPosition(1, transform.position + (eMC.GetCurrentForward() * wallDistance) + Vector3.forward*-1);
+            StartCoroutine(DerenderLine(flashTime) );
 
 
             //stun
