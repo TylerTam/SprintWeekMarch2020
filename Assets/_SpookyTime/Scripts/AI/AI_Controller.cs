@@ -15,6 +15,11 @@ public class AI_Controller : MonoBehaviour
     public Transform m_playerTransform;
     public float m_stoppingDistance;
     public float m_spawnInTime;
+    [Header("Movement Variables")]
+    public float m_defaultLerpTime = .2f;
+    public float m_spookyTimeLerpTime = .15f;
+
+
     [Tooltip ("The time that they are stunned")]
     public float m_stunTime;
     private List<Node> m_path;
@@ -111,7 +116,7 @@ public class AI_Controller : MonoBehaviour
 
     private void MoveToPoint(Vector3 p_targetPoint)
     {
-        m_movementController.MoveCharacter((p_targetPoint - transform.position));
+        m_movementController.MoveCharacter((p_targetPoint - transform.position), IsSpookyTime() ? m_spookyTimeLerpTime : m_defaultLerpTime);
     }
 
     #endregion
@@ -134,9 +139,16 @@ public class AI_Controller : MonoBehaviour
         if (Vector3.Distance((Vector2)transform.position, (Vector2)m_currentPatrolPoint.position) < m_stoppingDistance)
         {
             m_currentPatrolPoint = m_aiManager.GetNextPatrolPoint(m_currentPatrolPoint);
+            m_path = m_navAgent.CreatePath((Vector2)transform.position, (Vector2)m_currentPatrolPoint.position);
         }
     }
     #endregion
+    
+    public void SetPlayerTransform(Transform p_playerTransform)
+    {
+        m_playerTransform = p_playerTransform;
+    }
+
 
     /// <summary>
     /// Fades the ghost into the game, while having them idle in postion for a bit
@@ -160,8 +172,15 @@ public class AI_Controller : MonoBehaviour
             timer += Time.deltaTime;
             yield return null;
         }
-
         ChangeState(AIStates.WANDER);
     }
 
+
+    [Header("Temp Sppoky Time")]
+    public bool m_spookyTimeActive = false;
+
+    private bool IsSpookyTime()
+    {
+        return m_spookyTimeActive;
+    }
 }
