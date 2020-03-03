@@ -19,7 +19,7 @@ public class PlayerHealth : MonoBehaviour
 
     public void TakeDamage()
     {
-        m_health -= (TemporaryDataContainer.TemporarySpookyTimeActivated) ? m_defaultDamage : m_spookyTimeDamage;
+        m_health -= (TemporaryDataContainer.TemporarySpookyTimeActivated) ? m_spookyTimeDamage : m_defaultDamage;
         if (m_health <= 0)
         {
             m_playersDeathEvent.Invoke();
