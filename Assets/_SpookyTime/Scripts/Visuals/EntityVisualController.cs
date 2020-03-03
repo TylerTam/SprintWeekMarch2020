@@ -53,6 +53,6 @@ public class EntityVisualController : MonoBehaviour
         m_animator.SetBool(m_animTriggers.m_sideAnim, false);
         m_animator.SetBool(m_animTriggers.m_upAnim, false);
         m_animator.SetBool(m_animTriggers.m_downAnim, false);
-        m_sRender.flipX = false;
+
     }
 }
