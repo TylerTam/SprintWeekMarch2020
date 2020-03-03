@@ -130,7 +130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5951009381040442446}
   - component: {fileID: 2868997141641248767}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -321,6 +321,7 @@ MonoBehaviour:
   lightUI: {fileID: 0}
   t: {fileID: 0}
   flashTime: 0.28
+  m_flashDistance: 0
 --- !u!120 &5951009381619540833
 LineRenderer:
   m_ObjectHideFlags: 0

@@ -14,8 +14,7 @@ public class Entity_MovementController : MonoBehaviour
     #endregion
 
     #region Movement Properties
-    public enum AxisPriority { Vetical, Horizontal }
-    public AxisPriority m_priorityAxis;
+
     private Coroutine m_movementCoroutine;
     private bool m_moving;
     #endregion
@@ -50,8 +49,9 @@ public class Entity_MovementController : MonoBehaviour
     {
         if (m_moving) return;
 
+        print("movement: " + p_movement);
         Vector2 priorityMovement = GetPriority(p_movement);
-
+        print("movement2 : " + priorityMovement);
         if (Mathf.Abs(priorityMovement.magnitude) > 0)
         {
             m_visualController.ChangeWalkingState(true);
@@ -90,14 +90,18 @@ public class Entity_MovementController : MonoBehaviour
 
     private Vector2 GetPriority(Vector2 p_givenAxis)
     {
-        if (p_givenAxis.y != 0)
+        
+        if (Mathf.Abs(p_givenAxis.y) > .5f)
         {
+            print("this");
             return new Vector2(0, p_givenAxis.y);
         }
         else
         {
+            print("Axis: " + p_givenAxis.x);
             return new Vector2(p_givenAxis.x, 0);
         }
+
     }
 
     private void StartMovement(Vector2 p_movement, float p_targetLerpTime)
@@ -117,6 +121,7 @@ public class Entity_MovementController : MonoBehaviour
     /// </summary>
     private IEnumerator MoveMe(Vector2 p_currentDir, float p_targetLerpTime)
     {
+        
         m_moving = true;
 
         if ((Vector2)m_dirFacing != p_currentDir.normalized)

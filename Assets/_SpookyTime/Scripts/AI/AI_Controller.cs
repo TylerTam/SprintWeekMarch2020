@@ -96,6 +96,7 @@ public class AI_Controller : MonoBehaviour
     {
         if (m_path.Count > 0)
         {
+
             if (CloseToPoint(m_path[0].m_worldPosition))
             {
                 m_path.RemoveAt(0);
@@ -109,7 +110,6 @@ public class AI_Controller : MonoBehaviour
 
     private bool CloseToPoint(Vector3 p_targetPoint)
     {
-        Debug.DrawLine(transform.position, (Vector2)p_targetPoint, Color.magenta);
         if (Vector3.Distance((Vector2)p_targetPoint, (Vector2)transform.position) < m_stoppingDistance)
         {
             return true;
@@ -119,6 +119,7 @@ public class AI_Controller : MonoBehaviour
 
     private void MoveToPoint(Vector3 p_targetPoint)
     {
+
         m_movementController.MoveCharacter((p_targetPoint - transform.position), IsSpookyTime() ? m_spookyTimeLerpTime : m_defaultLerpTime);
     }
 
