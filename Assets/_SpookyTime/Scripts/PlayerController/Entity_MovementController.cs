@@ -125,6 +125,9 @@ public class Entity_MovementController : MonoBehaviour
         m_moving = false;
     }
 
-
+    public bool IsMoving()
+    {
+        return m_moving;
+    }
 
 }
