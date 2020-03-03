@@ -5,65 +5,60 @@ using UnityEngine.UI;
 
 public class Flash : MonoBehaviour
 {
-    public LayerMask hitlayer;
+    public LayerMask ghost;
+    public LayerMask wall;
     Transform flashCircle;
-    public ValueHandler light;
+    public ValueHandler lightUI;
     public Toggle t;
+    PlayerMovement pM;
     
     // Start is called before the first frame update
     void Start()
     {
         flashCircle = transform.GetChild(0);
+        pM = GetComponent<PlayerMovement>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetAxis("Jump")>0 && light.value >=100)
+        if (Input.GetAxis("Jump")>0 && lightUI.value >=100)
         {
+           
 
-            light.value = 0;
+            //flashlight
 
-            Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, GetComponent<CircleCollider2D>().radius,  hitlayer);
-            foreach(Collider2D col in colliders)
+            //send raycast in direction to find wall
+
+            RaycastHit2D wallHits = Physics2D.Raycast(transform.position, Vector2.right*-1, 38, wall);
+
+            float wallDistance;
+
+            if (wallHits)
+            {
+                wallDistance = (wallHits.collider.transform.position - transform.position).magnitude;
+            }
+            else
+            {
+                wallDistance = 38;
+            }
+            
+
+            //send raycast in direction to find ghost
+
+        RaycastHit2D[] ghostHits = Physics2D.RaycastAll(transform.position, Vector2.right*-1, wallDistance, ghost);
+
+            //render flashlight
+
+            Debug.DrawLine(transform.position, transform.position + (Vector3.right * -1) * wallDistance, Color.yellow);
+
+            //stun
+            foreach (RaycastHit2D ghostHit in ghostHits)
             {
 
+                ghostHit.collider.GetComponent<AI_Controller>().ChangeState(AI_Controller.AIStates.STUN);
 
-                SpriteRenderer csr = flashCircle.GetComponent<SpriteRenderer>();
-
-                col.GetComponent<MoveTowardsTarget>().moveSpeed = 0;
-
-                if (t.isOn)
-                {
-                    StartCoroutine(Delay(col.GetComponent<MoveTowardsTarget>()));
-                }
-                else
-                {
-                    StartCoroutine(Delay2(col.GetComponent<MoveTowardsTarget>()));
-                }
-                
-
-                
             }
         }
-
-
-
     }
-
-    IEnumerator Delay(MoveTowardsTarget mtt)
-    {
-        yield return new WaitForSeconds(1);
-
-
-        mtt.moveSpeed = 2;
-    }
-    IEnumerator Delay2(MoveTowardsTarget mtt)
-    {
-        yield return new WaitForSeconds(1);
-
-
-        mtt.moveSpeed = 5;
-    }
-
 }
