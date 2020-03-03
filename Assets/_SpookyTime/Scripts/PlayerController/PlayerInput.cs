@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
+
+    private bool m_enableInput = true;
     [System.Serializable]
     public class PlayerInputAxis
     {
@@ -17,6 +19,7 @@ public class PlayerInput : MonoBehaviour
 
     private void Update()
     {
+        if (!m_enableInput) return;
         m_movementController.MoveCharacter(GetInput(), m_lerpTime);
         Debug.DrawLine(transform.position, transform.position + m_movementController.GetCurrentForward(), Color.red);
     }
@@ -25,5 +28,10 @@ public class PlayerInput : MonoBehaviour
         float xInput = Input.GetAxis(m_playerInputs.m_movementXAxis);
         float yInput = Input.GetAxis(m_playerInputs.m_movementYAxis);
         return new Vector2(Mathf.Abs(xInput) > m_playerInputs.m_deadzone ? xInput : 0, Mathf.Abs(yInput) > m_playerInputs.m_deadzone ? yInput : 0) ;
+    }
+
+    public void ChangeInputState(bool p_activeState)
+    {
+        m_enableInput = p_activeState;
     }
 }

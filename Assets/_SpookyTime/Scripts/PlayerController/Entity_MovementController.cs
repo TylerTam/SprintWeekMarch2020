@@ -163,4 +163,10 @@ public class Entity_MovementController : MonoBehaviour
         return m_moving;
     }
 
+    public void ResetMe()
+    {
+        StopAllCoroutines();
+        m_moving = false;
+    }
+
 }
