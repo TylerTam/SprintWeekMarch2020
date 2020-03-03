@@ -178,11 +178,10 @@ public class AI_Controller : MonoBehaviour
     }
 
 
-    [Header("Temp Sppoky Time")]
-    public bool m_spookyTimeActive = false;
+
 
     private bool IsSpookyTime()
     {
-        return m_spookyTimeActive;
+        return TemporaryDataContainer.TemporarySpookyTimeActivated;
     }
 }
