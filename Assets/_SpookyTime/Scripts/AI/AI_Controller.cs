@@ -30,7 +30,6 @@ public class AI_Controller : MonoBehaviour
     {
         m_navAgent = GetComponent<GridNavigation_Agent>();
         m_movementController = GetComponent<Entity_MovementController>();
-        m_path = m_navAgent.CreatePath(transform.position, m_playerTransform.position);
         m_aiManager = AI_Manager.Instance;
     }
 
