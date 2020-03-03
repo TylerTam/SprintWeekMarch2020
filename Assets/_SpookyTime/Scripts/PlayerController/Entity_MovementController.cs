@@ -121,7 +121,9 @@ public class Entity_MovementController : MonoBehaviour
 
         if ((Vector2)m_dirFacing != p_currentDir.normalized)
         {
+
             m_visualController.RotateSprite(p_currentDir.normalized);
+
         }
 
         m_dirFacing = p_currentDir.normalized;
