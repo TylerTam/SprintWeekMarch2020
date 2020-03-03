@@ -10,13 +10,16 @@ public class Flash : MonoBehaviour
     Transform flashCircle;
     public ValueHandler lightUI;
     public Toggle t;
-    PlayerMovement pM;
+    Entity_MovementController eMC;
+    LineRenderer lr;
+    [SerializeField] float flashTime;
     
     // Start is called before the first frame update
     void Start()
     {
         flashCircle = transform.GetChild(0);
-        pM = GetComponent<PlayerMovement>();
+        eMC = GetComponent<Entity_MovementController>();
+        lr = GetComponent<LineRenderer>();
     }
 
     // Update is called once per frame
@@ -24,13 +27,13 @@ public class Flash : MonoBehaviour
     {
         if (Input.GetAxis("Jump")>0 && lightUI.value >=100)
         {
-           
+            lightUI.value = 0;
 
             //flashlight
 
             //send raycast in direction to find wall
 
-            RaycastHit2D wallHits = Physics2D.Raycast(transform.position, Vector2.right*-1, 38, wall);
+            RaycastHit2D wallHits = Physics2D.Raycast(transform.position, eMC.GetCurrentForward() , 38, wall);
 
             float wallDistance;
 
@@ -43,22 +46,35 @@ public class Flash : MonoBehaviour
                 wallDistance = 38;
             }
             
-
             //send raycast in direction to find ghost
 
-        RaycastHit2D[] ghostHits = Physics2D.RaycastAll(transform.position, Vector2.right*-1, wallDistance, ghost);
+        RaycastHit2D[] ghostHits = Physics2D.RaycastAll(transform.position, eMC.GetCurrentForward(), wallDistance, ghost);
 
             //render flashlight
+            print("render");
+            Debug.DrawLine(transform.position, transform.position + (eMC.GetCurrentForward() * wallDistance), Color.yellow);
+            lr.positionCount = 2;
+            lr.SetPosition(0, transform.position);
+            lr.SetPosition(1, transform.position + (eMC.GetCurrentForward() * wallDistance));
+            StartCoroutine(DerenderLine(flashTime));
 
-            Debug.DrawLine(transform.position, transform.position + (Vector3.right * -1) * wallDistance, Color.yellow);
 
             //stun
             foreach (RaycastHit2D ghostHit in ghostHits)
             {
-
+                print("got a ghostie");
                 ghostHit.collider.GetComponent<AI_Controller>().ChangeState(AI_Controller.AIStates.STUN);
-
+                
             }
         }
+    }
+
+
+    IEnumerator DerenderLine(float t)
+    {
+
+        yield return new WaitForSeconds(t);
+        print("derender");
+        lr.positionCount = 0;
     }
 }
