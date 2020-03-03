@@ -6,6 +6,9 @@ public class AI_Manager : MonoBehaviour
 {
     public List<Transform> m_patrolPoints;
     public static AI_Manager Instance;
+
+    [Header("Debugging")]
+    public List<GameObject> m_debuggingGhosts;
     private void Start()
     {
         Instance = this;
@@ -28,4 +31,16 @@ public class AI_Manager : MonoBehaviour
     {
         return m_patrolPoints[Random.Range(0, m_patrolPoints.Count)];
     }
+
+
+
+    #region Debugging
+    public void SpawnGhosts()
+    {
+        foreach(GameObject newGhost in m_debuggingGhosts)
+        {
+            newGhost.SetActive(true);
+        }
+    }
+    #endregion
 }
