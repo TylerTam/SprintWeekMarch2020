@@ -12,10 +12,16 @@ public class TemporaryDataContainer : MonoBehaviour
     public static float TemporarySpookyTimeDuration;
     public static bool TemporarySpookyTimeActivated;
 
+    // get this out
+    public static bool TemporaryIsPlayerAlive;
+
     private void Start()
     {
         TemporaryNumberOfSpookyTreasureToReachSpookyTime = NumberOfSpookyTreasureToReachSpookyTime;
         TemporarySpookyTimeDuration = SpookyTimeDuration;
+
+        // get this out of here later
+        TemporaryIsPlayerAlive = true;
     }
 
     private void Update()
