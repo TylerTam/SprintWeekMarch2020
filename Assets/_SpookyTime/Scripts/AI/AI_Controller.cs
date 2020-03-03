@@ -15,6 +15,7 @@ public class AI_Controller : MonoBehaviour
     public Transform m_playerTransform;
     public float m_stoppingDistance;
     public float m_spawnInTime;
+    [Tooltip ("The time that they are stunned")]
     public float m_stunTime;
     private List<Node> m_path;
     private Entity_MovementController m_movementController;
@@ -57,7 +58,11 @@ public class AI_Controller : MonoBehaviour
         
     }
 
-    private void ChangeState(AIStates p_newState)
+    /// <summary>
+    /// Changes the state of the ai.
+    /// </summary>
+    /// <param name="p_newState"></param>
+    public void ChangeState(AIStates p_newState)
     {
         m_currentState = p_newState;
         switch (p_newState)
@@ -70,6 +75,9 @@ public class AI_Controller : MonoBehaviour
                 break;
             case AIStates.SPAWING:
                 StartCoroutine(GhostSpawn());
+                break;
+            case AIStates.STUN:
+                StartCoroutine(GhostStun());
                 break;
         }
     }
