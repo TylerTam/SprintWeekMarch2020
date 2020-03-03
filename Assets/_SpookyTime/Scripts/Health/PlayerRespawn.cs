@@ -13,7 +13,7 @@ public class PlayerRespawn : MonoBehaviour
     public Transform m_spawnPoint;
     public float m_dieTime,m_respawnTime;
     public PlayerInput m_playerInput;
-    public Collider2D m_playerCol;
+    public Collider2D m_playerDetectionCol, m_playerCollider;
     public Entity_MovementController m_movementController;
 
     private PlayerHealth m_playerHealth;
@@ -39,14 +39,14 @@ public class PlayerRespawn : MonoBehaviour
     private IEnumerator RespawnMe()
     {
         float timer = 0;
-        m_playerCol.enabled = false;
-
+        m_playerDetectionCol.enabled = false;
+        m_playerCollider.enabled = false;
         #region Death Time
         m_movementController.ResetMe();
         m_movementController.enabled = false;
         m_respawnEvents.m_diedEvent.Invoke();
 
-        while (timer > m_dieTime)
+        while (timer < m_dieTime)
         {
             timer += Time.deltaTime;
             yield return null;
@@ -55,7 +55,7 @@ public class PlayerRespawn : MonoBehaviour
 
         #region Spawn Time
         timer = 0;
-        while (timer > m_respawnTime)
+        while (timer < m_respawnTime)
         {
             timer += Time.deltaTime;
             yield return null;
@@ -64,7 +64,8 @@ public class PlayerRespawn : MonoBehaviour
         m_playerInput.ChangeInputState(true);
         m_respawnEvents.m_spawnEvent.Invoke();
         m_movementController.enabled = true;
-        m_playerCol.enabled = true;
+        m_playerDetectionCol.enabled = true;
+        m_playerCollider.enabled = true;
         #endregion
     }
 }

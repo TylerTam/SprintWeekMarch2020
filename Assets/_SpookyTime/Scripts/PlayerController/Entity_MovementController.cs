@@ -49,9 +49,10 @@ public class Entity_MovementController : MonoBehaviour
     {
         if (m_moving) return;
 
-        print("movement: " + p_movement);
+
         Vector2 priorityMovement = GetPriority(p_movement);
-        print("movement2 : " + priorityMovement);
+        
+
         if (Mathf.Abs(priorityMovement.magnitude) > 0)
         {
             m_visualController.ChangeWalkingState(true);
@@ -93,12 +94,12 @@ public class Entity_MovementController : MonoBehaviour
         
         if (Mathf.Abs(p_givenAxis.y) > .5f)
         {
-            print("this");
+            
             return new Vector2(0, p_givenAxis.y);
         }
         else
         {
-            print("Axis: " + p_givenAxis.x);
+
             return new Vector2(p_givenAxis.x, 0);
         }
 

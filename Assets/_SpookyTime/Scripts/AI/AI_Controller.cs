@@ -96,7 +96,6 @@ public class AI_Controller : MonoBehaviour
     {
         if (m_path.Count > 0)
         {
-
             if (CloseToPoint(m_path[0].m_worldPosition))
             {
                 m_path.RemoveAt(0);

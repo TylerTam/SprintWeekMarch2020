@@ -74,6 +74,7 @@ public class IsPlayerOnGrave : MonoBehaviour
 
     private void Update()
     {
+        CheckRadius();
         if (isPlayerOnMe == true) { GetComponent<SpriteRenderer>().sprite = GraveSprite; }
         if (isPlayerOnMe == false) { GetComponent<SpriteRenderer>().sprite = GraveSpriteWhenPlayerIsOn; }
         if(Awarded == true) { GetComponent<SpriteRenderer>().sprite = BrokenGraveSprite; }
@@ -83,7 +84,7 @@ public class IsPlayerOnGrave : MonoBehaviour
             if (GraveCurrentHealth != 0)
             {
                 // change this to actual controller key
-                if (Input.GetKeyDown("space"))
+                if (Input.GetKeyDown(m_digButton))
                 {
                     m_events.playerDiggedGrave.Invoke();
                 }
@@ -104,22 +105,21 @@ public class IsPlayerOnGrave : MonoBehaviour
         GraveHealthFill.fillAmount = GraveHealthPercentage;
     }    
 
-    void OnTriggerEnter2D(Collider2D other)
+    public float m_radius;
+    public LayerMask m_detectionLayer;
+    public KeyCode m_digButton;
+    [Header("Debugging")]
+    public bool m_debugging;
+    public Color m_gizmosColor1;
+    private void CheckRadius()
     {
-        // change this to find the real player
-        if (other.gameObject.name == "TemporaryPlayer")
-        {
-            isPlayerOnMe = true;
-        }
+        isPlayerOnMe = Physics2D.OverlapCircle(transform.position, m_radius, m_detectionLayer) != null;
     }
-
-    void OnTriggerExit2D(Collider2D other)
+    private void OnDrawGizmos()
     {
-        // change this to find the real player
-        if (other.gameObject.name == "TemporaryPlayer")
-        {
-            isPlayerOnMe = false;
-        }
+        if (!m_debugging) return;
+        Gizmos.color = m_gizmosColor1;
+        Gizmos.DrawWireSphere(transform.position, m_radius);
     }
 
     public void playerDiggedGrave()

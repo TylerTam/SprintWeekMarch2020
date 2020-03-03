@@ -482,7 +482,8 @@ MonoBehaviour:
   m_dieTime: 1
   m_respawnTime: 1
   m_playerInput: {fileID: 5951009381619540845}
-  m_playerCol: {fileID: 7767214240638993738}
+  m_playerDetectionCol: {fileID: 7767214240638993738}
+  m_playerCollider: {fileID: 2868997141641248767}
   m_movementController: {fileID: 5951009381619540842}
   m_respawnEvents:
     m_diedEvent:
