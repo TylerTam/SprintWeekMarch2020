@@ -31,10 +31,12 @@ public class AI_Controller : MonoBehaviour
         m_navAgent = GetComponent<GridNavigation_Agent>();
         m_movementController = GetComponent<Entity_MovementController>();
         m_aiManager = AI_Manager.Instance;
+        m_navAgent.m_navGrid = m_aiManager.m_navGrid;
     }
 
     private void OnEnable()
     {
+        
         ChangeState(AIStates.SPAWING);
     }
     private void Update()

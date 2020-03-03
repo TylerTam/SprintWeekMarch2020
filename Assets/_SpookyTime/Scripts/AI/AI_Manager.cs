@@ -7,6 +7,8 @@ public class AI_Manager : MonoBehaviour
     public List<Transform> m_patrolPoints;
     public static AI_Manager Instance;
 
+    public GridNavigation m_navGrid;
+
     [Header("Debugging")]
     public List<GameObject> m_debuggingGhosts;
     private void Start()
