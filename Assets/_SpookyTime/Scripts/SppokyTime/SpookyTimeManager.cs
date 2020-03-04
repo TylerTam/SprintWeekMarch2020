@@ -10,7 +10,6 @@ public class SpookyTimeManager : MonoBehaviour
     public SpookyTimeEvent m_spookyTimeActivate;
     public SpookyTimeEvent m_spookyTimeDeactivate;
 
-    public float m_spookyTimeDuration;
 
     public UnityEngine.UI.Image m_spookyTimeBar;
 
@@ -44,21 +43,20 @@ public class SpookyTimeManager : MonoBehaviour
         }
 
         m_spookyTimeActivate.Invoke();
-        StartCoroutine(SpookyTimeDuration());
         m_spookyTimeActive = true;
+        StartCoroutine(SpookyTimeDuration());
+        
     }
 
-    /// <summary>
-    /// The coroutine for when spooky time is happening
-    /// </summary>
-    /// <returns></returns>
+    public bool IsSpookyTimeActive()
+    {
+        return m_spookyTimeActive;
+    }
+
     private IEnumerator SpookyTimeDuration()
     {
-        float timer = 0;
-        while (timer < m_spookyTimeDuration)
+        while (m_spookyTimeActive)
         {
-            timer += Time.deltaTime;
-            //UpdateUI(timer / m_spookyTimeDuration);
             yield return null;
         }
         m_spookyTimeDeactivate.Invoke();
@@ -67,8 +65,8 @@ public class SpookyTimeManager : MonoBehaviour
     }
 
 
-    public bool IsSpookyTimeActive()
+    public void ChangeSpookyTime(bool p_activeState)
     {
-        return m_spookyTimeActive;
+        m_spookyTimeActive = p_activeState;
     }
 }

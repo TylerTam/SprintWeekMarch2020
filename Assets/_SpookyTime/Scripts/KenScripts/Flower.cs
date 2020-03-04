@@ -55,8 +55,16 @@ public class Flower : MonoBehaviour
     private void CheckRadius()
     {
         Collider2D playercol = Physics2D.OverlapCircle(transform.position, m_radius, m_detectionLayer);
-        Player = playercol.transform.parent.transform;
-        isPlayerOnMe = playercol != null;
+        if (playercol != null)
+        {
+            Player = playercol.transform.parent.transform;
+            isPlayerOnMe = playercol != null;
+        }
+        else
+        {
+            isPlayerOnMe = false;
+        }
+        
 
         
         /////////////////////////////////////////////////////////////////////////////////////////////////////

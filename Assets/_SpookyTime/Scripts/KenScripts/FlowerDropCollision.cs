@@ -69,7 +69,7 @@ public class FlowerDropCollision : MonoBehaviour
 
 
         // get reference to spooky timer
-        Debug.Log("change Spooky Time");
+        m_spookyTime.ChangeSpookyTime(false);
 
     }
 
