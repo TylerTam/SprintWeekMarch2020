@@ -32,7 +32,6 @@ public class AI_HitDetection : MonoBehaviour
         foreach(Collider2D col in cols)
         {
             col.transform.parent.GetComponent<PlayerRespawn>().OnDied();
-            m_playerDetection.KilledPlayer(col.transform.parent.gameObject);
         }
     }
 }

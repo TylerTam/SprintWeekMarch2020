@@ -170,4 +170,11 @@ public class Entity_MovementController : MonoBehaviour
         m_moving = false;
     }
 
+    public void ResetMovementController()
+    {
+        m_myCollider.transform.position = transform.position;
+        m_movementCoroutine = null;
+        m_moving = false;
+    }
+
 }
