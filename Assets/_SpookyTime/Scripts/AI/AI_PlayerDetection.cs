@@ -16,6 +16,9 @@ public class AI_PlayerDetection : MonoBehaviour
     public bool m_debugging;
     public Color m_gizmosColor1;
 
+    public Color angryColor;
+
+    SpriteRenderer sr;
 
     private GameObject m_currentTarget;
 
@@ -23,6 +26,7 @@ public class AI_PlayerDetection : MonoBehaviour
 
     private void Start()
     {
+        sr = transform.GetChild(1).GetComponent<SpriteRenderer>();
         m_aiCont = GetComponent<AI_Controller>();
         m_spookyTimeManager = SpookyTimeManager.Instance;
     }
@@ -38,6 +42,9 @@ public class AI_PlayerDetection : MonoBehaviour
             Collider2D col = Physics2D.OverlapCircle(transform.position, (m_spookyTimeManager.IsSpookyTimeActive()) ? m_spookyTimeDetectionRadius : m_detectionRange, m_detectionMask);
             if (col != null)
             {
+
+                sr.color = angryColor;
+
                 if (!Physics2D.Linecast(transform.position, col.transform.position, m_blockingMask))
                 {
                     if (m_lostPlayer)
@@ -51,9 +58,17 @@ public class AI_PlayerDetection : MonoBehaviour
                 }
                 
             }
+            else
+            {
+                sr.color = Color.white;
+            }
+
+           
         }
         else
         {
+            sr.color = angryColor;
+
             Collider2D[] cols = Physics2D.OverlapCircleAll(transform.position, (m_spookyTimeManager.IsSpookyTimeActive()) ? m_spookyTimeDetectionRadius : m_detectionRange, m_detectionMask);
             bool currentTargetInBounds = false;
             foreach(Collider2D col in cols)

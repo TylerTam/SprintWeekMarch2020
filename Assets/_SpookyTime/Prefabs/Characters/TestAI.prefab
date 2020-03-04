@@ -155,6 +155,7 @@ MonoBehaviour:
   m_lostDetectionTime: 3
   m_debugging: 1
   m_gizmosColor1: {r: 1, g: 0.85797274, b: 0, a: 1}
+  angryColor: {r: 1, g: 0, b: 0, a: 1}
 --- !u!114 &4838811509102985552
 MonoBehaviour:
   m_ObjectHideFlags: 0
