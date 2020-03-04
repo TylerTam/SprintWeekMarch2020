@@ -23,6 +23,8 @@ public class Entity_MovementController : MonoBehaviour
 
     private Vector3 m_dirFacing;
 
+    private bool m_reverse;
+
     public virtual void Start()
     {
 
@@ -47,11 +49,19 @@ public class Entity_MovementController : MonoBehaviour
     /// </summary>
     public void MoveCharacter(Vector2 p_movement, float p_targetLerpTime)
     {
-        if (m_moving) return;
+        
 
 
         Vector2 priorityMovement = GetPriority(p_movement);
         
+        if (m_moving)
+        {
+            if(priorityMovement.normalized == -(Vector2)m_dirFacing)
+            {
+                m_reverse = true;
+            }
+            return;
+        }
 
         if (Mathf.Abs(priorityMovement.magnitude) > 0)
         {
@@ -105,13 +115,14 @@ public class Entity_MovementController : MonoBehaviour
 
     }
 
-    private void StartMovement(Vector2 p_movement, float p_targetLerpTime)
+    private void StartMovement(Vector2 p_currentDir, float p_targetLerpTime)
     {
-        if (p_movement.magnitude != 0)
+        if (p_currentDir.magnitude != 0)
         {
             if (m_movementCoroutine == null)
             {
-                m_movementCoroutine = StartCoroutine(MoveMe(p_movement, p_targetLerpTime));
+                Vector3 targetPos = transform.position + (new Vector3((p_currentDir.x == 0) ? 0 : Mathf.Sign(p_currentDir.x), (p_currentDir.y == 0) ? 0 : Mathf.Sign(p_currentDir.y), transform.position.z)); ;
+                m_movementCoroutine = StartCoroutine(MoveMe(transform.position, targetPos, p_currentDir, p_targetLerpTime, 0));
 
             }
         }
@@ -120,7 +131,7 @@ public class Entity_MovementController : MonoBehaviour
     /// <summary>
     /// Moves the character root through a lerp
     /// </summary>
-    private IEnumerator MoveMe(Vector2 p_currentDir, float p_targetLerpTime)
+    private IEnumerator MoveMe(Vector2 p_startPos,Vector2 p_targetPos, Vector2 p_currentDir, float p_targetLerpTime,float p_startingLerpTime)
     {
         
         m_moving = true;
@@ -133,20 +144,32 @@ public class Entity_MovementController : MonoBehaviour
         }
 
         m_dirFacing = p_currentDir.normalized;
-        float m_currentMovementTimer = 0;
+        float m_currentMovementTimer = p_startingLerpTime;
         float lerpTime = p_targetLerpTime;
-        Vector3 startPos = transform.position;
-        Vector3 endPos = transform.position + (new Vector3((p_currentDir.x == 0) ? 0 : Mathf.Sign(p_currentDir.x), (p_currentDir.y == 0) ? 0 : Mathf.Sign(p_currentDir.y),transform.position.z));
+        Vector3 startPos = p_startPos;
+        Vector3 endPos = p_targetPos;
         
 
-        while (m_currentMovementTimer / lerpTime < 1)
+        while (m_currentMovementTimer / lerpTime < 1 )
         {
+
+            if (m_reverse)
+            {
+                m_reverse = false;
+                m_visualController.RotateSprite(-p_currentDir.normalized);
+                m_dirFacing = -m_dirFacing;
+                m_movementCoroutine = StartCoroutine(MoveMe(endPos, startPos, -p_currentDir, p_targetLerpTime, (1-(m_currentMovementTimer/lerpTime))*p_targetLerpTime));
+                
+                yield break;
+            }
+
             m_currentMovementTimer += Time.deltaTime;
             m_myCollider.transform.position = endPos;
             float percent = m_currentMovementTimer / lerpTime;
             transform.position = Vector3.Lerp(startPos, endPos, percent);
             yield return null;
         }
+
         transform.position = endPos;
         m_myCollider.transform.position = transform.position;
         m_movementCoroutine = null;
