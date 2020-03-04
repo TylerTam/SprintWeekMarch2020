@@ -136,12 +136,10 @@ public class Entity_MovementController : MonoBehaviour
         
         m_moving = true;
 
-        if ((Vector2)m_dirFacing != p_currentDir.normalized)
-        {
 
             m_visualController.RotateSprite(p_currentDir.normalized);
 
-        }
+        
 
         m_dirFacing = p_currentDir.normalized;
         float m_currentMovementTimer = p_startingLerpTime;
@@ -156,7 +154,7 @@ public class Entity_MovementController : MonoBehaviour
             if (m_reverse)
             {
                 m_reverse = false;
-                m_visualController.RotateSprite(-p_currentDir.normalized);
+
                 m_dirFacing = -m_dirFacing;
                 m_movementCoroutine = StartCoroutine(MoveMe(endPos, startPos, -p_currentDir, p_targetLerpTime, (1-(m_currentMovementTimer/lerpTime))*p_targetLerpTime));
                 

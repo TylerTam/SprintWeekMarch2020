@@ -19,6 +19,7 @@ public class PlayerRespawn : MonoBehaviour
     private PlayerHealth m_playerHealth;
 
     public RespawnEvents m_respawnEvents;
+    public bool m_isDead;
     [System.Serializable]
     public struct RespawnEvents
     {
@@ -31,6 +32,7 @@ public class PlayerRespawn : MonoBehaviour
     }
     public void OnDied()
     {
+        m_isDead = true;
         m_playerHealth.TakeDamage();
         m_playerInput.ChangeInputState(false);
         StartCoroutine(RespawnMe());
@@ -66,6 +68,7 @@ public class PlayerRespawn : MonoBehaviour
         m_movementController.enabled = true;
         m_playerDetectionCol.enabled = true;
         m_playerCollider.enabled = true;
+        m_isDead = false;
         #endregion
     }
 }
