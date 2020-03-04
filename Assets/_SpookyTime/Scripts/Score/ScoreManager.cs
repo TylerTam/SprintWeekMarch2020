@@ -7,7 +7,7 @@ public class ScoreManager : MonoBehaviour
     public static ScoreManager Instance;
 
     public int m_currentScore;
-    private void Start()
+    private void Awake()
     {
         Instance = this;
     }
@@ -19,7 +19,7 @@ public class ScoreManager : MonoBehaviour
     public void ChangeScore(int p_addToScore)
     {
         m_currentScore += p_addToScore;
-        GameObject.Find("Health").GetComponent<ValueHandler>().ValueSet(m_currentScore);
+        GameObject.Find("Score").GetComponent<ValueHandler>().ValueSet(m_currentScore);
     }
 
 }
