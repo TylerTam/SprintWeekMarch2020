@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpookyTimeAcivated: 0
-  GraveMaxHealth: 3
+  GraveMaxHealth: 1
   GraveCurrentHealth: 0
   GraveHealthPercentage: 0
   GraveAward: 0
