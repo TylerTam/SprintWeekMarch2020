@@ -17,7 +17,7 @@ public class SpookyTimeManager : MonoBehaviour
     public static SpookyTimeManager Instance;
     private bool m_spookyTimeActive;
 
-    private void Start()
+    private void Awake()
     {
         Instance = this;
         StartCoroutine(SpookyCountdown());

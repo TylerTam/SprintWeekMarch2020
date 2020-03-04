@@ -107,12 +107,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_detectionRange: 4
+  m_spookyTimeDetectionRadius: 4
   m_detectionMask:
     serializedVersion: 2
     m_Bits: 1024
   m_blockingMask:
     serializedVersion: 2
     m_Bits: 2560
+  m_lostDetectionTime: 3
   m_debugging: 1
   m_gizmosColor1: {r: 1, g: 0.85797274, b: 0, a: 1}
 --- !u!114 &4838811509102985552

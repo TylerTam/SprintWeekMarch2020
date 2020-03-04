@@ -5,11 +5,13 @@ using UnityEngine;
 public class AI_HitDetection : MonoBehaviour
 {
     public float m_radius;
+
     public LayerMask m_hitLayer;
 
     [Header("Debugging")]
     public bool m_debugging;
     public Color m_gizmosColor1;
+
     private void OnDrawGizmos()
     {
         if (!m_debugging) return;
