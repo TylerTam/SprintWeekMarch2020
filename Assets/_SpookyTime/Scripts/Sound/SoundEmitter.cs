@@ -22,12 +22,12 @@ public class SoundEmitter : MonoBehaviour
     {
         m_aSource.Stop();
 
-        float random = Random.Range(0, 100);
+        float random = Random.Range(0f, 1f);
         float currentProbablilty = 0;
         AudioClip currentClip = null;
         foreach(Audioclips clip in m_allClips)
         {
-            if(currentProbablilty < clip.m_probablility)
+            if(random < clip.m_probablility + currentProbablilty)
             {
                 currentClip = clip.m_clip;
                 break;
