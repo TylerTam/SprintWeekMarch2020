@@ -110,15 +110,18 @@ public class AI_Controller : MonoBehaviour
 
     private void MoveAI()
     {
-        if (m_path.Count > 0)
+        if (m_path != null)
         {
-            if (CloseToPoint(m_path[0].m_worldPosition))
+            if (m_path.Count > 0)
             {
-                m_path.RemoveAt(0);
-            }
-            else
-            {
-                MoveToPoint(m_path[0].m_worldPosition);
+                if (CloseToPoint(m_path[0].m_worldPosition))
+                {
+                    m_path.RemoveAt(0);
+                }
+                else
+                {
+                    MoveToPoint(m_path[0].m_worldPosition);
+                }
             }
         }
     }
