@@ -28,6 +28,9 @@ public class AI_Controller : MonoBehaviour
     private Entity_MovementController m_movementController;
     private AI_Manager m_aiManager;
 
+    private Vector3 m_lastPlayerPos = new Vector3();
+    public float m_recalculatePathDistance;
+
     public AIEventsStruct m_aiEvents;
     [System.Serializable]
     public struct AIEventsStruct
@@ -138,8 +141,7 @@ public class AI_Controller : MonoBehaviour
     #endregion
 
     #region PathCalculation
-    private Vector3 m_lastPlayerPos = new Vector3();
-    public float m_recalculatePathDistance;
+    
 
     private void CalculatePathToPlayer()
     {

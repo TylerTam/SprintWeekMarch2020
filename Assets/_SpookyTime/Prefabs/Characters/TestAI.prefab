@@ -76,6 +76,41 @@ MonoBehaviour:
   m_spookyTimeLerpTime: 0.2
   m_stunTime: 3
   m_recalculatePathDistance: 0.1
+  m_aiEvents:
+    m_playerSpotted:
+      m_PersistentCalls:
+        m_Calls: []
+      m_TypeName: AIEvents, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    m_aiStunned:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4838811509102985552}
+          m_MethodName: ChangeCollisionState
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: AIEvents, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    m_aiUnStunned:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 4838811509102985552}
+          m_MethodName: ChangeCollisionState
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
+      m_TypeName: AIEvents, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!114 &5636206993720654519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -206,6 +241,12 @@ MonoBehaviour:
     m_downAnim: Down
     m_sideAnim: Side
     m_walkingAnimBool: IsWalking
+    m_diggingBool: 
+  m_finishDigging:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: EntityVisualEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
 --- !u!212 &5636206994160595830
 SpriteRenderer:
   m_ObjectHideFlags: 0

@@ -7,12 +7,12 @@ public class AI_HitDetection : MonoBehaviour
     public float m_radius;
 
     public LayerMask m_hitLayer;
-
+    private AI_PlayerDetection m_playerDetection;
     [Header("Debugging")]
     public bool m_debugging;
     public Color m_gizmosColor1;
 
-    private bool m_canCollide;
+    private bool m_canCollide = true;
     public void ChangeCollisionState(bool p_active)
     {
         m_canCollide = p_active;
@@ -20,7 +20,7 @@ public class AI_HitDetection : MonoBehaviour
 
     private void OnDrawGizmos()
     {
-        if (!m_debugging) return;
+        if (!m_debugging || !m_canCollide) return;
         Gizmos.color = m_gizmosColor1;
         Gizmos.DrawWireSphere(transform.position, m_radius);
     }
@@ -32,6 +32,7 @@ public class AI_HitDetection : MonoBehaviour
         foreach(Collider2D col in cols)
         {
             col.transform.parent.GetComponent<PlayerRespawn>().OnDied();
+            m_playerDetection.KilledPlayer(col.transform.parent.gameObject);
         }
     }
 }

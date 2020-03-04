@@ -38,6 +38,8 @@ public class GraveSpawner : MonoBehaviour
     public bool Grave12IsUp;
     public bool Grave13IsUp;
 
+    public Transform m_gravesParent;
+
     void Start()
     {
         Grave1IsUp = false;
@@ -89,18 +91,20 @@ public class GraveSpawner : MonoBehaviour
     void SpawnNewGrave()
     {
         RandomNumber = Random.Range(1, 13);
-        if (RandomNumber == 1 & Grave1IsUp == false) { Instantiate(GravePrefab, GraveSpawn1); Grave1IsUp = true; }
-        if (RandomNumber == 2 & Grave2IsUp == false) { Instantiate(GravePrefab, GraveSpawn2); Grave2IsUp = true; }
-        if (RandomNumber == 3 & Grave3IsUp == false) { Instantiate(GravePrefab, GraveSpawn3); Grave3IsUp = true; }
-        if (RandomNumber == 4 & Grave4IsUp == false) { Instantiate(GravePrefab, GraveSpawn4); Grave4IsUp = true; }
-        if (RandomNumber == 5 & Grave5IsUp == false) { Instantiate(GravePrefab, GraveSpawn5); Grave5IsUp = true; }
-        if (RandomNumber == 6 & Grave6IsUp == false) { Instantiate(GravePrefab, GraveSpawn6); Grave6IsUp = true; }
-        if (RandomNumber == 7 & Grave7IsUp == false) { Instantiate(GravePrefab, GraveSpawn7); Grave7IsUp = true; }
-        if (RandomNumber == 8 & Grave8IsUp == false) { Instantiate(GravePrefab, GraveSpawn8); Grave8IsUp = true; }
-        if (RandomNumber == 9 & Grave9IsUp == false) { Instantiate(GravePrefab, GraveSpawn9); Grave9IsUp = true; }
-        if (RandomNumber == 10 & Grave10IsUp == false) { Instantiate(GravePrefab, GraveSpawn10); Grave10IsUp = true; }
-        if (RandomNumber == 11 & Grave11IsUp == false) { Instantiate(GravePrefab, GraveSpawn11); Grave11IsUp = true; }
-        if (RandomNumber == 12 & Grave12IsUp == false) { Instantiate(GravePrefab, GraveSpawn12); Grave12IsUp = true; }
-        if (RandomNumber == 13 & Grave13IsUp == false) { Instantiate(GravePrefab, GraveSpawn13); Grave13IsUp = true; }
+        if (RandomNumber == 1 & Grave1IsUp == false) { Instantiate(GravePrefab, m_gravesParent); Grave1IsUp = true; }
+        if (RandomNumber == 2 & Grave2IsUp == false) { Instantiate(GravePrefab, m_gravesParent); Grave2IsUp = true; }
+        if (RandomNumber == 3 & Grave3IsUp == false) { Instantiate(GravePrefab, m_gravesParent); Grave3IsUp = true; }
+        if (RandomNumber == 4 & Grave4IsUp == false) { Instantiate(GravePrefab, m_gravesParent); Grave4IsUp = true; }
+        if (RandomNumber == 5 & Grave5IsUp == false) { Instantiate(GravePrefab, m_gravesParent); Grave5IsUp = true; }
+        if (RandomNumber == 6 & Grave6IsUp == false) { Instantiate(GravePrefab, m_gravesParent); Grave6IsUp = true; }
+        if (RandomNumber == 7 & Grave7IsUp == false) { Instantiate(GravePrefab, m_gravesParent); Grave7IsUp = true; }
+        if (RandomNumber == 8 & Grave8IsUp == false) { Instantiate(GravePrefab, m_gravesParent); Grave8IsUp = true; }
+        if (RandomNumber == 9 & Grave9IsUp == false) { Instantiate(GravePrefab, m_gravesParent); Grave9IsUp = true; }
+        if (RandomNumber == 10 & Grave10IsUp == false) { Instantiate(GravePrefab, m_gravesParent); Grave10IsUp = true; }
+        if (RandomNumber == 11 & Grave11IsUp == false) { Instantiate(GravePrefab, m_gravesParent); Grave11IsUp = true; }
+        if (RandomNumber == 12 & Grave12IsUp == false) { Instantiate(GravePrefab, m_gravesParent); Grave12IsUp = true; }
+        if (RandomNumber == 13 & Grave13IsUp == false) { Instantiate(GravePrefab, m_gravesParent); Grave13IsUp = true; }
     }
+
+
 }

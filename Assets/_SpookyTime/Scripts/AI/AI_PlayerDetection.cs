@@ -60,8 +60,11 @@ public class AI_PlayerDetection : MonoBehaviour
             {
                 if(col.gameObject == m_currentTarget)
                 {
-                    currentTargetInBounds = true;
-                    break;
+                    if (!Physics2D.Linecast(transform.position, col.transform.position, m_blockingMask))
+                    {
+                        currentTargetInBounds = true;
+                        break;
+                    }
                 }
             }
             if (!currentTargetInBounds)
@@ -76,6 +79,7 @@ public class AI_PlayerDetection : MonoBehaviour
         }
     }
 
+
     /// <summary>
     /// Detection time for if they lose the player
     /// </summary>
@@ -87,6 +91,14 @@ public class AI_PlayerDetection : MonoBehaviour
         m_currentTarget = null;
         m_aiCont.SetPlayerTransform(null);
         m_aiCont.ChangeState(AI_Controller.AIStates.WANDER);
+    }
+
+    public void KilledPlayer(GameObject p_hitPlayer)
+    {
+        if(p_hitPlayer == m_currentTarget)
+        {
+            m_currentTarget = null;
+        }
     }
 
     private void OnDrawGizmos()
