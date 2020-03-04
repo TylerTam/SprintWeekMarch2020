@@ -71,7 +71,7 @@ MonoBehaviour:
   m_currentState: 0
   m_playerTransform: {fileID: 0}
   m_stoppingDistance: 0.2
-  m_spawnInTime: 1
+  m_spawnInTime: 2
   m_defaultLerpTime: 0.4
   m_spookyTimeLerpTime: 0.2
   m_stunTime: 3
@@ -79,7 +79,18 @@ MonoBehaviour:
   m_aiEvents:
     m_playerSpotted:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 4838811509102985552}
+          m_MethodName: ChangeCollisionState
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 1
+          m_CallState: 2
       m_TypeName: AIEvents, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
     m_aiStunned:
       m_PersistentCalls:
@@ -247,6 +258,16 @@ MonoBehaviour:
     m_walkingAnimBool: IsWalking
     m_diggingBool: 
   m_finishDigging:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: EntityVisualEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  m_prematureDig:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: EntityVisualEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  m_startMoving:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: EntityVisualEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,

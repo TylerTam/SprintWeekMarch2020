@@ -26,7 +26,9 @@ public class FlowerObject : MonoBehaviour
     {
         
         m_flowerVisual.transform.localPosition = Vector3.zero;
+        transform.parent = null;
         m_playerRespawn = null;
+        m_currentPlayerTransform = null;
     }
 
     private void Update()

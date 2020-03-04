@@ -109,7 +109,7 @@ public class AI_Controller : MonoBehaviour
 
     public bool IsStunned()
     {
-        return m_currentState == AIStates.STUN;
+        return m_currentState == AIStates.STUN || m_currentState == AIStates.SPAWING;
     }
 
     #region Movement Functions

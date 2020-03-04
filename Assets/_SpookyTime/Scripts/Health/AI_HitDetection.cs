@@ -8,11 +8,16 @@ public class AI_HitDetection : MonoBehaviour
 
     public LayerMask m_hitLayer;
     private AI_PlayerDetection m_playerDetection;
+    private AI_Controller m_aiCont;
     [Header("Debugging")]
     public bool m_debugging;
     public Color m_gizmosColor1;
 
-    private bool m_canCollide = true;
+    private bool m_canCollide = false;
+    private void Start()
+    {
+        m_aiCont = GetComponent<AI_Controller>();
+    }
     public void ChangeCollisionState(bool p_active)
     {
         m_canCollide = p_active;
