@@ -5,6 +5,7 @@ using UnityEngine;
 public class FlowerSpawner : MonoBehaviour
 {
     public static bool isPlayerCarryingFlower = false;
+    public static bool isPlayer2CarryingFlower = false;
 
     public static bool isFlowersInScene = false;
     int RandomNumber;
@@ -38,4 +39,9 @@ public class FlowerSpawner : MonoBehaviour
         if (RandomNumber == 3) { Instantiate(FlowerPrefab, FlowerSpawn3); isFlowersInScene = true; }
         if (RandomNumber == 4) { Instantiate(FlowerPrefab, FlowerSpawn4); isFlowersInScene = true; }
     }
+
+    /// <summary>
+    /// ///////////////////////////////////////////////////
+    /// </summary>
+
 }
