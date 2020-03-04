@@ -49,8 +49,10 @@ public class IsPlayerOnGrave : MonoBehaviour
     }
     /// </summary>
 
+    private ScoreManager m_scoreManager;
     private void Start()
     {
+        m_scoreManager = ScoreManager.Instance;
         // array for awards
         var myCodes = new int[5];
         myCodes[0] = 150;
@@ -137,9 +139,8 @@ public class IsPlayerOnGrave : MonoBehaviour
         /// add score
         if (SpookyTimeAcivated == false)
         {         
-            TemporaryDataContainer.TemporaryScoreInt += GraveAward;
+            m_scoreManager.ChangeScore(GraveAward);
         }
-        if(SpookyTimeAcivated == true) { TemporaryDataContainer.TemporaryScoreInt += Mathf.RoundToInt(GraveAward * HauntScoreMultiplier); }
 
         /// change sprites, (maybe destroy grave after a few seconds)
         StartCoroutine(WaitAndDestroyGrave());

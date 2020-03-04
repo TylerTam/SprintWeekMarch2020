@@ -25,12 +25,10 @@ public class PlayerHealth : MonoBehaviour
     public void TakeDamage()
     {
         m_health -= (m_spookyTimeManager.IsSpookyTimeActive()) ? m_spookyTimeDamage : m_defaultDamage;
+        GameObject.Find("Health").GetComponent<ValueHandler>().ValueSet(m_health);
         if (m_health <= 0)
         {
             m_playersDeathEvent.Invoke();
         }
-
     }
-
-
 }

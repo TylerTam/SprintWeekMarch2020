@@ -13,6 +13,6 @@ public class ScoreUI : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        GetComponent<Text>().text = "" + TemporaryDataContainer.TemporaryScoreInt;
+       // GetComponent<Text>().text = "" + TemporaryDataContainer.TemporaryScoreInt;
     }
 }
