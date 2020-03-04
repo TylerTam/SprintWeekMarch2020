@@ -66,7 +66,7 @@ public class Flash : MonoBehaviour
             //stun
             foreach (RaycastHit2D ghostHit in ghostHits)
             {
-                ghostHit.collider.GetComponent<AI_Controller>().ChangeState(AI_Controller.AIStates.STUN);
+                ghostHit.collider.transform.parent.GetComponent<AI_Controller>().ChangeState(AI_Controller.AIStates.STUN);
                 
             }
         }

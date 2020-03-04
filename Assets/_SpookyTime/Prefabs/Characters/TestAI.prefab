@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 5636206993720654523}
   - component: {fileID: 5636206993720654520}
-  - component: {fileID: 5636206993720654521}
   - component: {fileID: 5636206993720654518}
   - component: {fileID: 5636206993720654519}
   - component: {fileID: 5636206993720654522}
@@ -57,55 +56,6 @@ MonoBehaviour:
   m_avoidLayer:
     serializedVersion: 2
     m_Bits: 0
---- !u!212 &5636206993720654521
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5636206993720654516}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 5c3ebf40627721e4eb20ecdf69951b4b, type: 3}
-  m_Color: {r: 1, g: 0.4575472, b: 0.4575472, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
 --- !u!114 &5636206993720654518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -122,10 +72,10 @@ MonoBehaviour:
   m_playerTransform: {fileID: 0}
   m_stoppingDistance: 0.2
   m_spawnInTime: 1
-  m_defaultLerpTime: 0.2
-  m_spookyTimeLerpTime: 0.15
-  m_stunTime: 0
-  m_recalculatePathDistance: 0
+  m_defaultLerpTime: 0.4
+  m_spookyTimeLerpTime: 0.2
+  m_stunTime: 3
+  m_recalculatePathDistance: 0.1
 --- !u!114 &5636206993720654519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -292,7 +242,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: -5764916591985645763, guid: 1c02a117149f5c64aa0b320cfa8f9570,
+    type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -300,7 +251,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &5636206995371219273
@@ -313,7 +264,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5636206995371219272}
   - component: {fileID: 5636206995371219275}
-  m_Layer: 4
+  m_Layer: 8
   m_Name: Collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -12,7 +12,8 @@ public class ValueHandler : MonoBehaviour
     
     public float value, valueMax, valueMin, valueWarn;
 
-    
+
+
     public void Change()
     {
         vV.Display();
@@ -20,7 +21,9 @@ public class ValueHandler : MonoBehaviour
 
     public void ValueAdd(float f)
     {
-        if (clampMaxAmount) { value = Mathf.Clamp(value + f, valueMin, valueMax); }
+        if (clampMaxAmount) {
+            value = Mathf.Clamp(value + f, valueMin, valueMax);
+        }
         else
         {
             value = value + f;

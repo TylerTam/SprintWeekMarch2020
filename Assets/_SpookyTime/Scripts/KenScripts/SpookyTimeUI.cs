@@ -13,7 +13,7 @@ public class SpookyTimeUI : MonoBehaviour
     // spooky time count down
     public float SpookyTimeDuration;
     bool SpookyTimeTrigger = false;
-
+    /*
 
     void Update()
     {
@@ -54,5 +54,5 @@ public class SpookyTimeUI : MonoBehaviour
         SpookyTimeCountDownText.SetActive(true);
         SpookyTimeCountDownText.GetComponent<Text>().text = "Time before Spooky Time Ends:" + SpookyTimeDuration;
         if(SpookyTimeDuration <= 0) { SpookyTimeTrigger = false; }
-    }
+    }*/
 }

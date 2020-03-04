@@ -32,6 +32,7 @@ public class AI_Controller : MonoBehaviour
         m_movementController = GetComponent<Entity_MovementController>();
         m_aiManager = AI_Manager.Instance;
         m_navAgent.m_navGrid = m_aiManager.m_navGrid;
+        m_spookyTimeManager = SpookyTimeManager.Instance;
     }
 
     private void OnEnable()
@@ -180,9 +181,10 @@ public class AI_Controller : MonoBehaviour
 
 
 
-
+    private SpookyTimeManager m_spookyTimeManager;
     private bool IsSpookyTime()
     {
-        return TemporaryDataContainer.TemporarySpookyTimeActivated;
+        
+        return m_spookyTimeManager.IsSpookyTimeActive() ;
     }
 }

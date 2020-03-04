@@ -97,9 +97,6 @@ public class IsPlayerOnGrave : MonoBehaviour
             m_events.GraveBroken.Invoke();
         }
 
-        // spooky time condition
-        SpookyTimeAcivated = TemporaryDataContainer.TemporarySpookyTimeActivated;
-
         // health bar
         GraveHealthPercentage = ((float)GraveCurrentHealth) / ((float)GraveMaxHealth);
         GraveHealthFill.fillAmount = GraveHealthPercentage;
