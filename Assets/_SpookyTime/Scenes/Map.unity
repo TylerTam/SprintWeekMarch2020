@@ -771,7 +771,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 427907635980639285, guid: 84cf1bb269e935544b7e458c2e77b241,
         type: 3}
-
       propertyPath: m_debuggingGhosts.Array.size
       value: 0
       objectReference: {fileID: 0}
@@ -823,10 +822,14 @@ PrefabInstance:
     - target: {fileID: 427907635980639285, guid: 84cf1bb269e935544b7e458c2e77b241,
         type: 3}
       propertyPath: m_aiPrefab
-
       value: 
       objectReference: {fileID: 5636206993720654516, guid: 53004957f08a134419cc2ae9bf58b8e9,
         type: 3}
+    - target: {fileID: 427907635980639285, guid: 84cf1bb269e935544b7e458c2e77b241,
+        type: 3}
+      propertyPath: m_aiSpawnChance
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 5863671800324210501, guid: 84cf1bb269e935544b7e458c2e77b241,
         type: 3}
       propertyPath: orthographic size
@@ -850,7 +853,7 @@ PrefabInstance:
     - target: {fileID: 427907635980639284, guid: 84cf1bb269e935544b7e458c2e77b241,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5863671799586731998, guid: 84cf1bb269e935544b7e458c2e77b241,
         type: 3}
@@ -871,7 +874,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_playersDeathEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-
       objectReference: {fileID: 0}
     - target: {fileID: 5863671799586731998, guid: 84cf1bb269e935544b7e458c2e77b241,
         type: 3}
@@ -909,7 +911,6 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
-
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84cf1bb269e935544b7e458c2e77b241, type: 3}
 --- !u!4 &219265216 stripped
@@ -1356,7 +1357,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1a032523da2ad04a88556a17a97e549, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_timeTillSpookyTime: 10000000
+  m_timeTillSpookyTime: 30
   m_spookyTimeActivate:
     m_PersistentCalls:
       m_Calls:
@@ -1422,7 +1423,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: SpookyTimeEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
-  m_spookyTimeBar: {fileID: 0}
+  m_spookyTimeBar: {fileID: 506700050}
 --- !u!1 &480078110
 GameObject:
   m_ObjectHideFlags: 0
@@ -1587,6 +1588,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &506700050 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2569340748717613531, guid: 22e344e206ec9674aa5cf58e284d2cae,
+    type: 3}
+  m_PrefabInstance: {fileID: 1968614845}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &537530367
 GameObject:
   m_ObjectHideFlags: 0
@@ -17287,18 +17300,6 @@ Sprite:
   m_PhysicsShape: []
   m_Bones: []
   m_SpriteID: 
---- !u!114 &1697787465 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2569340748717613531, guid: 22e344e206ec9674aa5cf58e284d2cae,
-    type: 3}
-  m_PrefabInstance: {fileID: 1968614845}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1722494683
 GameObject:
   m_ObjectHideFlags: 0
@@ -18023,7 +18024,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cfbc9cd551e9db479d2248e7ed61aef, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-
 --- !u!1 &1840580063
 GameObject:
   m_ObjectHideFlags: 0
@@ -18068,7 +18068,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SpookyTimeDuration: 0
-
 --- !u!1001 &1968614845
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18184,31 +18183,6 @@ PrefabInstance:
     - target: {fileID: 8563768440322011654, guid: 22e344e206ec9674aa5cf58e284d2cae,
         type: 3}
       propertyPath: m_Pivot.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2569340747806042182, guid: 22e344e206ec9674aa5cf58e284d2cae,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 197.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2569340747806042176, guid: 22e344e206ec9674aa5cf58e284d2cae,
-        type: 3}
-      propertyPath: testMode
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2569340747984808947, guid: 22e344e206ec9674aa5cf58e284d2cae,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2569340747984808940, guid: 22e344e206ec9674aa5cf58e284d2cae,
-        type: 3}
-      propertyPath: m_FontData.m_Alignment
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 2569340747984808940, guid: 22e344e206ec9674aa5cf58e284d2cae,
-        type: 3}
-      propertyPath: m_Text
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
