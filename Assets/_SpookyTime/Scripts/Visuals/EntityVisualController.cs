@@ -10,7 +10,7 @@ public class EntityVisualController : MonoBehaviour
     public SpriteRenderer m_sRender;
     public AnimationTriggers m_animTriggers;
 
-    public EntityVisualEvent m_finishDigging;
+    public EntityVisualEvent m_finishDigging, m_prematureDig, m_startMoving;
     [System.Serializable]
     public struct AnimationTriggers
     {
@@ -52,6 +52,10 @@ public class EntityVisualController : MonoBehaviour
     }
     public void ChangeWalkingState(bool p_activeState)
     {
+        if (p_activeState)
+        {
+            m_startMoving.Invoke();
+        }
         m_animator.SetBool(m_animTriggers.m_walkingAnimBool, p_activeState);
     }
 
@@ -68,8 +72,14 @@ public class EntityVisualController : MonoBehaviour
         m_animator.SetBool(m_animTriggers.m_diggingBool, true);
     }
 
+    public void FinishPrematureDig()
+    {
+        m_prematureDig.Invoke();
+    }
+
     public void FinishDigging()
     {
+        
         m_animator.SetBool(m_animTriggers.m_diggingBool, false);
         m_finishDigging.Invoke();
     }

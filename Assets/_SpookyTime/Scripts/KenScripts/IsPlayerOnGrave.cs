@@ -26,9 +26,6 @@ public class IsPlayerOnGrave : MonoBehaviour
     public int SpookyTreasureRandomNumber;
     [SerializeField] int PercentChanceForSpookyTreasure;
 
-    [SerializeField] Sprite GraveSprite;
-    [SerializeField] Sprite GraveSpriteWhenPlayerIsOn;
-    [SerializeField] Sprite BrokenGraveSprite;
 
     //health bar visual
     [SerializeField] Image GraveHealthFill;
@@ -77,9 +74,7 @@ public class IsPlayerOnGrave : MonoBehaviour
     private void Update()
     {
         CheckRadius();
-        if (isPlayerOnMe == true) { GetComponent<SpriteRenderer>().sprite = GraveSprite; }
-        if (isPlayerOnMe == false) { GetComponent<SpriteRenderer>().sprite = GraveSpriteWhenPlayerIsOn; }
-        if(Awarded == true) { GetComponent<SpriteRenderer>().sprite = BrokenGraveSprite; }
+        
 
 
         // if the grave is broken
@@ -132,7 +127,7 @@ public class IsPlayerOnGrave : MonoBehaviour
         }
 
         /// change sprites, (maybe destroy grave after a few seconds)
-        StartCoroutine(WaitAndDestroyGrave());
+        Destroy(gameObject);
     }
 
    public void SpookyTreasure()
@@ -141,11 +136,6 @@ public class IsPlayerOnGrave : MonoBehaviour
         TemporaryDataContainer.TemporaryCurrentSpookyTreasureHeld += 1;
     }
 
-    // remove this if want sprite to stay
-    IEnumerator WaitAndDestroyGrave()
-    {
-        yield return new WaitForSeconds(3);
-        Destroy(gameObject);
-    }
+
 
 }
