@@ -7,7 +7,6 @@ public class Flash : MonoBehaviour
 {
     public LayerMask ghost;
     public LayerMask wall;
-    Transform flashCircle;
     public ValueHandler lightUI;
     public Toggle t;
     Entity_MovementController eMC;
@@ -15,11 +14,11 @@ public class Flash : MonoBehaviour
     [SerializeField] float flashTime;
 
     public float m_flashDistance;
+    public KeyCode m_flashKeycode;
 
     // Start is called before the first frame update
     void Start()
     {
-        flashCircle = transform.GetChild(0);
         eMC = GetComponent<Entity_MovementController>();
         lr = GetComponent<LineRenderer>();
     }
@@ -28,7 +27,7 @@ public class Flash : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetAxis("Jump")>0 && lightUI.value >=100)
+        if (Input.GetKeyDown(m_flashKeycode) && lightUI.value >=100)
         {
 
             lightUI.value = 0;
@@ -77,7 +76,6 @@ public class Flash : MonoBehaviour
     {
 
         yield return new WaitForSeconds(t);
-        print("derender");
         lr.positionCount = 0;
     }
 }

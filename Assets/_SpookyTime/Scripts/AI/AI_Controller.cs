@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+public class AIEvents : UnityEngine.Events.UnityEvent { }
 public class AI_Controller : MonoBehaviour
 {
     private GridNavigation_Agent m_navAgent;
@@ -25,6 +27,14 @@ public class AI_Controller : MonoBehaviour
     private List<Node> m_path;
     private Entity_MovementController m_movementController;
     private AI_Manager m_aiManager;
+
+    public AIEventsStruct m_aiEvents;
+    [System.Serializable]
+    public struct AIEventsStruct
+    {
+        public AIEvents m_playerSpotted;
+        public AIEvents m_aiStunned, m_aiUnStunned;
+    }
     
     private void Start()
     {
@@ -77,6 +87,7 @@ public class AI_Controller : MonoBehaviour
         switch (p_newState)
         {
             case AIStates.CHASE:
+                m_aiEvents.m_playerSpotted.Invoke();
                 break;
             case AIStates.WANDER:
                 m_currentPatrolPoint = m_aiManager.GiveNewPatrolPoint();
@@ -86,6 +97,7 @@ public class AI_Controller : MonoBehaviour
                 StartCoroutine(GhostSpawn());
                 break;
             case AIStates.STUN:
+                m_aiEvents.m_aiStunned.Invoke();
                 StartCoroutine(GhostStun());
                 break;
         }
@@ -176,6 +188,7 @@ public class AI_Controller : MonoBehaviour
             timer += Time.deltaTime;
             yield return null;
         }
+        m_aiEvents.m_aiUnStunned.Invoke();  
         ChangeState(AIStates.WANDER);
     }
 

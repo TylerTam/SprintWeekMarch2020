@@ -81,17 +81,6 @@ public class IsPlayerOnGrave : MonoBehaviour
         if (isPlayerOnMe == false) { GetComponent<SpriteRenderer>().sprite = GraveSpriteWhenPlayerIsOn; }
         if(Awarded == true) { GetComponent<SpriteRenderer>().sprite = BrokenGraveSprite; }
 
-        if (isPlayerOnMe == true)
-        {
-            if (GraveCurrentHealth != 0)
-            {
-                // change this to actual controller key
-                if (Input.GetKeyDown(m_digButton))
-                {
-                    m_events.playerDiggedGrave.Invoke();
-                }
-            }
-        }
 
         // if the grave is broken
         if(GraveCurrentHealth == 0 && Awarded == false)
@@ -106,7 +95,6 @@ public class IsPlayerOnGrave : MonoBehaviour
 
     public float m_radius;
     public LayerMask m_detectionLayer;
-    public KeyCode m_digButton;
     [Header("Debugging")]
     public bool m_debugging;
     public Color m_gizmosColor1;
@@ -123,6 +111,7 @@ public class IsPlayerOnGrave : MonoBehaviour
 
     public void playerDiggedGrave()
     {
+        m_events.playerDiggedGrave.Invoke();
         GraveCurrentHealth -= 1;
     }
 

@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Grave
   - Safezone
+  - Flower
   layers:
   - Default
   - TransparentFX
@@ -36,7 +37,7 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Flower
   - Grave
   - PlayerHit
   m_SortingLayers:

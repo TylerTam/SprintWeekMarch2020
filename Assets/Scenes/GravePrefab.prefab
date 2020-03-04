@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4173449305699431641}
   - component: {fileID: 4173449305699431646}
   - component: {fileID: 4173449305699431640}
+  - component: {fileID: 5345496185608336635}
   m_Layer: 30
   m_Name: GravePrefab
   m_TagString: Grave
@@ -70,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
   m_Color: {r: 0.3490566, g: 0.20251869, b: 0.20251869, a: 1}
   m_FlipX: 0
@@ -112,18 +113,7 @@ MonoBehaviour:
   m_events:
     playerDiggedGrave:
       m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 4173449305699431640}
-          m_MethodName: playerDiggedGrave
-          m_Mode: 1
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
+        m_Calls: []
       m_TypeName: GraveEvents, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
     GraveBroken:
@@ -162,9 +152,24 @@ MonoBehaviour:
   m_detectionLayer:
     serializedVersion: 2
     m_Bits: 1024
-  m_digButton: 120
   m_debugging: 1
   m_gizmosColor1: {r: 0, g: 1, b: 0.19188643, a: 0.6627451}
+--- !u!58 &5345496185608336635
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4173449305699431647}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.06
 --- !u!1 &4173449305837606032
 GameObject:
   m_ObjectHideFlags: 0

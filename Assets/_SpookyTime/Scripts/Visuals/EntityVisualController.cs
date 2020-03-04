@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+public class EntityVisualEvent : UnityEngine.Events.UnityEvent { }
 public class EntityVisualController : MonoBehaviour
 {
     public Animator m_animator;
     public SpriteRenderer m_sRender;
     public AnimationTriggers m_animTriggers;
-    
+
+    public EntityVisualEvent m_finishDigging;
     [System.Serializable]
     public struct AnimationTriggers
     {
@@ -15,6 +18,7 @@ public class EntityVisualController : MonoBehaviour
         public string m_downAnim;
         public string m_sideAnim;
         public string m_walkingAnimBool;
+        public string m_diggingBool;
     }
     private bool m_flipped;
 
@@ -24,7 +28,7 @@ public class EntityVisualController : MonoBehaviour
         if (Mathf.Abs(p_dir.x) > 0)
         {
             m_animator.SetBool(m_animTriggers.m_sideAnim, true);
-            if (Mathf.Sign(p_dir.x) > 0)
+            if (Mathf.Sign(p_dir.x) < 0)
             {
                 m_sRender.flipX = false;
             }
@@ -40,7 +44,10 @@ public class EntityVisualController : MonoBehaviour
             {
                 m_animator.SetBool(m_animTriggers.m_upAnim, true);
             }
-            m_animator.SetBool(m_animTriggers.m_downAnim, true);
+            else
+            {
+                m_animator.SetBool(m_animTriggers.m_downAnim, true);
+            }
         }
     }
     public void ChangeWalkingState(bool p_activeState)
@@ -53,6 +60,17 @@ public class EntityVisualController : MonoBehaviour
         m_animator.SetBool(m_animTriggers.m_sideAnim, false);
         m_animator.SetBool(m_animTriggers.m_upAnim, false);
         m_animator.SetBool(m_animTriggers.m_downAnim, false);
+        m_animator.SetBool(m_animTriggers.m_diggingBool, false);
+    }
 
+    public void StartDigging()
+    {
+        m_animator.SetBool(m_animTriggers.m_diggingBool, true);
+    }
+
+    public void FinishDigging()
+    {
+        m_animator.SetBool(m_animTriggers.m_diggingBool, false);
+        m_finishDigging.Invoke();
     }
 }
