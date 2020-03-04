@@ -286,11 +286,6 @@ PrefabInstance:
       propertyPath: lightUI
       value: 
       objectReference: {fileID: 104938576}
-    - target: {fileID: 9106878053758751119, guid: a2b188463c9f14542bf296651611ae7e,
-        type: 3}
-      propertyPath: m_digKey
-      value: 308
-      objectReference: {fileID: 0}
     - target: {fileID: 9162925000945978575, guid: a2b188463c9f14542bf296651611ae7e,
         type: 3}
       propertyPath: m_spawnPoint
@@ -889,6 +884,27 @@ PrefabInstance:
         type: 3}
       propertyPath: m_playersDeathEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_FloatArgument
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1840580064, guid: 84cf1bb269e935544b7e458c2e77b241, type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 477691559, guid: 84cf1bb269e935544b7e458c2e77b241, type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 403226221, guid: 84cf1bb269e935544b7e458c2e77b241, type: 3}
+      propertyPath: m_RootOrder
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5816961436333878556, guid: 84cf1bb269e935544b7e458c2e77b241,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 1999607638, guid: 84cf1bb269e935544b7e458c2e77b241, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84cf1bb269e935544b7e458c2e77b241, type: 3}
