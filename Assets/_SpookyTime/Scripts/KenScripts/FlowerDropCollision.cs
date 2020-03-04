@@ -5,6 +5,9 @@ using UnityEngine;
 public class FlowerDropCollision : MonoBehaviour
 {
     bool isPlayerOnMe = false;
+    bool isPlayerTwoOnMe = false;
+
+
     public float m_radius;
     public LayerMask m_detectionLayer;
     public Color m_gizmosColor1;
@@ -28,6 +31,11 @@ public class FlowerDropCollision : MonoBehaviour
         {
             FlowerDropped();
         }
+
+        if(isPlayerTwoOnMe == true && FlowerSpawner.isPlayer2CarryingFlower == true)
+        {
+            FlowerDropped();
+        }
     }
 
 
@@ -40,12 +48,17 @@ public class FlowerDropCollision : MonoBehaviour
     private void CheckRadius()
     {
         isPlayerOnMe = Physics2D.OverlapCircle(gameObject.transform.position, m_radius, m_detectionLayer) != null;
+        /////////////////////////////////////////////////////
+        isPlayerTwoOnMe = Physics2D.OverlapCircle(gameObject.transform.position, m_radius, m_detectionLayer) != null;
+        ///////////////////////////////////////////////////////
     }
 
     void FlowerDropped()
     {
         FlowerSpawner.isPlayerCarryingFlower = false;
+        FlowerSpawner.isPlayer2CarryingFlower = false;
         FlowerSpawner.isFlowersInScene = false;
+
 
         // find all flowers in scene
         FlowerPrefabsInScene = GameObject.FindGameObjectsWithTag("Flower");

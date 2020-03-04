@@ -5,17 +5,24 @@ using UnityEngine;
 public class Flower : MonoBehaviour
 {
     bool isPlayerOnMe = false;
+    /// <summary>
+    /// //////////////////////////////////////////////////////////
+    /// </summary>
+
+
     public float m_radius;
     public LayerMask m_detectionLayer;
     public Color m_gizmosColor1;
     public bool m_debugging;
-    Transform Player;
+    /// <summary>
+    /// /////////////////////////////////////////////////////
+    /// </summary>
+    [SerializeField] Transform Player;
+    /// <summary>
+    /// //////////////////////////////////////////////////////////////
+    /// </summary>
     [SerializeField] float FlowerOnPlayerYOffSet;
 
-    void Start()
-    {
-        Player = GameObject.Find("Player").GetComponent<Transform>();
-    }
 
     
     void Update()
@@ -27,10 +34,15 @@ public class Flower : MonoBehaviour
            FlowerSpawner.isPlayerCarryingFlower = true;
         }
 
+
+
         if(FlowerSpawner.isPlayerCarryingFlower == true)
         {
             gameObject.transform.position = Player.position + new Vector3(0, FlowerOnPlayerYOffSet);
         }
+
+
+        
     }
 
 
@@ -42,7 +54,16 @@ public class Flower : MonoBehaviour
     }
     private void CheckRadius()
     {
-        isPlayerOnMe = Physics2D.OverlapCircle(transform.position, m_radius, m_detectionLayer) != null;
+        Collider2D playercol = Physics2D.OverlapCircle(transform.position, m_radius, m_detectionLayer);
+        Player = playercol.transform.parent.transform;
+        isPlayerOnMe = playercol != null;
+
+        
+        /////////////////////////////////////////////////////////////////////////////////////////////////////
     }
+
+
+    /////////////////////////////////////////////////
+    ///
 
 }
