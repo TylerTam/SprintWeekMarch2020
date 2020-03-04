@@ -9,14 +9,23 @@ public class ValueHandler : MonoBehaviour
     public float addPerSecond;
     bool warned = false;
     public ValueVisualizer vV;
+    ShakeObject sO;
     
     public float value, valueMax, valueMin, valueWarn;
 
-
+    private void Start()
+    {
+        if (GetComponent<ShakeObject>()) sO = GetComponent<ShakeObject>(); print("shake found");
+    }
 
     public void Change()
     {
         vV.Display();
+        if (sO)
+        {
+            sO.StartShaking();
+            print("shake");
+        }
     }
 
     public void ValueAdd(float f)
@@ -62,6 +71,8 @@ public class ValueHandler : MonoBehaviour
         {
             value = Mathf.Clamp(f, valueMin, Mathf.Infinity);
         }
+
+        Change();
     }
 
 
@@ -87,6 +98,6 @@ public class ValueHandler : MonoBehaviour
 
     private void Update()
     {
-        ValueAdd(addPerSecond * Time.deltaTime);
+        if(addPerSecond !=0)ValueAdd(addPerSecond * Time.deltaTime);
     }
 }
