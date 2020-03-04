@@ -5,7 +5,7 @@ using UnityEngine;
 public class AI_PlayerDetection : MonoBehaviour
 {
     public float m_detectionRange = 2, m_spookyTimeDetectionRadius = 4;
-    public LayerMask m_detectionMask, m_blockingMask;
+    public LayerMask m_detectionMask, m_blockingMask, m_safezoneMask;
     private AI_Controller m_aiCont;
 
     public float m_lostDetectionTime;
@@ -86,7 +86,17 @@ public class AI_PlayerDetection : MonoBehaviour
     /// <returns></returns>
     private IEnumerator LostTimer()
     {
-        yield return new WaitForSeconds(m_lostDetectionTime);
+        float timer = 0;
+        while (timer < m_lostDetectionTime)
+        {
+            timer += Time.deltaTime;
+            yield return null;
+            if (Physics2D.Linecast(transform.position, m_currentTarget.transform.position, m_safezoneMask))
+            {
+                timer = m_lostDetectionTime;
+            }
+        }
+
         m_lostPlayer = false;
         m_currentTarget = null;
         m_aiCont.SetPlayerTransform(null);

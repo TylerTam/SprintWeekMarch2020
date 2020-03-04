@@ -9,11 +9,15 @@ public class AI_Manager : MonoBehaviour
 
     public GridNavigation m_navGrid;
 
+    public GameObject m_aiPrefab;
+    
+
     [Header("Debugging")]
     public List<GameObject> m_debuggingGhosts;
     private void Start()
     {
         Instance = this;
+        StartCoroutine(SpawnInitialGhosts());
     }
 
     public Transform GetNextPatrolPoint(Transform p_currentPatrolPoint)
@@ -45,4 +49,38 @@ public class AI_Manager : MonoBehaviour
         }
     }
     #endregion
+
+    [Header("Spawning AI")]
+    public int m_maxAIOnScene;
+    private int m_currentAICount;
+    public int m_nextSpawnAI;
+    private int m_currentSpawnerCounter;
+    public List<Transform> m_spawnLocations;
+    public float m_initialSpawnGhostTime = 3;
+
+    private IEnumerator SpawnInitialGhosts()
+    {
+        yield return new WaitForSeconds(m_initialSpawnGhostTime);
+        for (int i = 0; i < 4; i++)
+        {
+            m_currentAICount++;
+            GameObject newGhost = Instantiate(m_aiPrefab, m_spawnLocations[i].position, Quaternion.identity);
+        }
+    }
+    public void SpawnAI( Vector3 p_spawnLocation)
+    {
+        if (m_currentSpawnerCounter < m_nextSpawnAI)
+        {
+            m_currentSpawnerCounter = 0;
+            if (m_currentAICount < m_maxAIOnScene)
+            {
+                GameObject newGhost = Instantiate(m_aiPrefab, p_spawnLocation, Quaternion.identity);
+            }
+        }
+        else
+        {
+            m_currentSpawnerCounter++;
+        }
+
+    }
 }

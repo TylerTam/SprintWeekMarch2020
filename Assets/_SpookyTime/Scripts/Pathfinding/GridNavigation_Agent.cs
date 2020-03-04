@@ -81,8 +81,7 @@ public class GridNavigation_Agent : MonoBehaviour
             }
         }
         Debug.Log("Path could not be calculated!");
-        Debug.DrawLine(startPoint, targetPoint, Color.magenta);
-        Debug.Break();
+
         return null;
     }
 
