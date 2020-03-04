@@ -176,7 +176,12 @@ MonoBehaviour:
   - {fileID: 6102317938856725149}
   - {fileID: 6102317938499562086}
   m_navGrid: {fileID: 0}
+  m_aiPrefab: {fileID: 0}
   m_debuggingGhosts: []
+  m_maxAIOnScene: 10
+  m_aiSpawnChance: 20
+  m_spawnLocations: []
+  m_initialSpawnGhostTime: 3
 --- !u!1 &6102317938831120124
 GameObject:
   m_ObjectHideFlags: 0

@@ -47,8 +47,10 @@ public class IsPlayerOnGrave : MonoBehaviour
     /// </summary>
 
     private ScoreManager m_scoreManager;
+    private AI_Manager m_aiManager;
     private void Start()
     {
+        m_aiManager = AI_Manager.Instance;
         m_scoreManager = ScoreManager.Instance;
         // array for awards
         var myCodes = new int[5];
@@ -112,6 +114,7 @@ public class IsPlayerOnGrave : MonoBehaviour
 
     public void GraveBroken()
     {
+
         Awarded = true;
 
         // check if this treasure is spooky or not
@@ -126,6 +129,7 @@ public class IsPlayerOnGrave : MonoBehaviour
             m_scoreManager.ChangeScore(GraveAward);
         }
 
+        m_aiManager.SpawnAI(transform.position);
         /// change sprites, (maybe destroy grave after a few seconds)
         Destroy(gameObject);
     }

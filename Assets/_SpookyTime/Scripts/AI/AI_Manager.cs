@@ -53,7 +53,7 @@ public class AI_Manager : MonoBehaviour
     [Header("Spawning AI")]
     public int m_maxAIOnScene;
     private int m_currentAICount;
-    public int m_nextSpawnAI;
+    public float m_aiSpawnChance;
     private int m_currentSpawnerCounter;
     public List<Transform> m_spawnLocations;
     public float m_initialSpawnGhostTime = 3;
@@ -69,12 +69,14 @@ public class AI_Manager : MonoBehaviour
     }
     public void SpawnAI( Vector3 p_spawnLocation)
     {
-        if (m_currentSpawnerCounter < m_nextSpawnAI)
+        float chance = Random.Range(0f, 1f);
+        if (chance < m_aiSpawnChance)
         {
             m_currentSpawnerCounter = 0;
             if (m_currentAICount < m_maxAIOnScene)
             {
                 GameObject newGhost = Instantiate(m_aiPrefab, p_spawnLocation, Quaternion.identity);
+                m_currentAICount++;
             }
         }
         else
