@@ -371,7 +371,7 @@ MonoBehaviour:
   flashTime: 0.28
   stunAward: 50
   m_flashDistance: 38
-  m_flashKeycode: 305
+  m_flashKeycode: 306
 --- !u!120 &8474759804641589533
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -522,7 +522,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a13cd43a528e7534eac827f6dd95f456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_digKey: 306
+  m_digKey: 308
   m_digLayer:
     serializedVersion: 2
     m_Bits: 1073741824
