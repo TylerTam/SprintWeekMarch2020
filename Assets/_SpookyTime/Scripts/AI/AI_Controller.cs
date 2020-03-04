@@ -101,9 +101,15 @@ public class AI_Controller : MonoBehaviour
                 break;
             case AIStates.STUN:
                 m_aiEvents.m_aiStunned.Invoke();
+                
                 StartCoroutine(GhostStun());
                 break;
         }
+    }
+
+    public bool IsStunned()
+    {
+        return m_currentState == AIStates.STUN;
     }
 
     #region Movement Functions

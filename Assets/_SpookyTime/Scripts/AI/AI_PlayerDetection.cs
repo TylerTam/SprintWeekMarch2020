@@ -33,10 +33,12 @@ public class AI_PlayerDetection : MonoBehaviour
 
     private void Update()
     {
+        if (m_aiCont.IsStunned()) return;
         DetectPlayer();
     }
     private void DetectPlayer()
     {
+        
         if (m_currentTarget == null)
         {
             Collider2D col = Physics2D.OverlapCircle(transform.position, (m_spookyTimeManager.IsSpookyTimeActive()) ? m_spookyTimeDetectionRadius : m_detectionRange, m_detectionMask);
