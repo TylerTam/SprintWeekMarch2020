@@ -12,6 +12,7 @@ public class Flash : MonoBehaviour
     Entity_MovementController eMC;
     LineRenderer lr;
     [SerializeField] float flashTime;
+    int stunAward;
 
     public float m_flashDistance;
     public KeyCode m_flashKeycode;
@@ -61,12 +62,15 @@ public class Flash : MonoBehaviour
 
             StartCoroutine(DerenderLine(flashTime));
 
+            ScoreManager sM = ScoreManager.Instance;
 
             //stun
             foreach (RaycastHit2D ghostHit in ghostHits)
             {
                 ghostHit.collider.transform.parent.GetComponent<AI_Controller>().ChangeState(AI_Controller.AIStates.STUN);
-                
+
+                sM.ChangeScore(stunAward);
+
             }
         }
     }
