@@ -359,6 +359,7 @@ MonoBehaviour:
   lightUI: {fileID: 0}
   t: {fileID: 0}
   flashTime: 0.28
+  stunAward: 50
   m_flashDistance: 38
   m_flashKeycode: 305
 --- !u!120 &8474759804641589533

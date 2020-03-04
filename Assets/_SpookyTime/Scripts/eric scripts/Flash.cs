@@ -12,7 +12,7 @@ public class Flash : MonoBehaviour
     Entity_MovementController eMC;
     LineRenderer lr;
     [SerializeField] float flashTime;
-    int stunAward;
+    [SerializeField] int stunAward = 50;
 
     public float m_flashDistance;
     public KeyCode m_flashKeycode;
