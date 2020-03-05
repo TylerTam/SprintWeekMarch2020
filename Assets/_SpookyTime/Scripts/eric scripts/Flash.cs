@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[System.Serializable]
+public class FlashEvent : UnityEngine.Events.UnityEvent { }
 public class Flash : MonoBehaviour
 {
     public LayerMask ghost;
@@ -19,6 +21,7 @@ public class Flash : MonoBehaviour
     public float m_flashDistance;
     public KeyCode m_flashKeycode;
 
+    public FlashEvent m_flashed;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +36,7 @@ public class Flash : MonoBehaviour
     {
         if (Input.GetKeyDown(m_flashKeycode) && lightUI.value >=100)
         {
+            m_flashed.Invoke();
 
             lightUI.value = 0;
 
