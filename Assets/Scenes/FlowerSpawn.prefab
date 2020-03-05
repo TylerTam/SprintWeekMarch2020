@@ -143,6 +143,8 @@ MonoBehaviour:
   m_allClips:
   - m_clip: {fileID: 8300000, guid: d8430ce8fd340a04a977b54df916b077, type: 3}
     m_probablility: 1
+  m_hasSpookyTimeVariations: 0
+  m_spookyTimeClips: []
 --- !u!1 &2063467305288393540
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,6 +364,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: FlowerObjectSounds, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
       PublicKeyToken=null
+  m_flowerAwardScore: 2500
 --- !u!82 &4357089727681941451
 AudioSource:
   m_ObjectHideFlags: 0
@@ -473,6 +476,8 @@ MonoBehaviour:
   m_allClips:
   - m_clip: {fileID: 8300000, guid: e0c8d22bf34b17849ab7a3a958dcc752, type: 3}
     m_probablility: 1
+  m_hasSpookyTimeVariations: 0
+  m_spookyTimeClips: []
 --- !u!1 &5816961434954754575
 GameObject:
   m_ObjectHideFlags: 0
