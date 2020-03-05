@@ -17,9 +17,12 @@ public class PlayerDigging : MonoBehaviour
 
     public float m_delayTime;
     private Coroutine m_sparkDelay;
+
+    public GameObject m_digText;
     // Update is called once per frame
     void Update()
     {
+        DigText();
         if (m_canDig)
         {
             if (CheckInput())
@@ -52,6 +55,21 @@ public class PlayerDigging : MonoBehaviour
         }
 
         return m_currentGrave != null;
+    }
+
+    private void DigText()
+    {
+        Collider2D col = Physics2D.OverlapCircle(transform.position, m_digRadius, m_digLayer);
+        if (col != null)
+        {
+            m_digText.SetActive(true);
+        }
+        else
+        {
+            m_digText.SetActive(false);
+
+        }
+
     }
 
     private bool CheckInput()
