@@ -12,8 +12,11 @@ public class PlayerDigging : MonoBehaviour
 
     private IsPlayerOnGrave m_currentGrave;
 
-    public PlayerDiggingEvent m_startDigging;
+    public PlayerDiggingEvent m_startDigging, m_failedDig;
     private bool m_canDig = true;
+
+    public float m_delayTime;
+    private Coroutine m_sparkDelay;
     // Update is called once per frame
     void Update()
     {
@@ -27,6 +30,10 @@ public class PlayerDigging : MonoBehaviour
                     m_canDig = false;
                     
                     m_currentGrave.playerDiggedGrave();
+                }
+                else
+                {
+                    m_sparkDelay = StartCoroutine(DigFailed());
                 }
             }
         }
@@ -56,5 +63,13 @@ public class PlayerDigging : MonoBehaviour
     {
         m_canDig = p_activeState;
     }
+
+    private IEnumerator DigFailed()
+    {
+        yield return new WaitForSeconds(m_delayTime);
+        m_failedDig.Invoke();
+    }
+
+
 
 }
