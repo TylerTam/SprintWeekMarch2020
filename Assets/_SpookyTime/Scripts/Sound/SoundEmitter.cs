@@ -38,7 +38,7 @@ public class SoundEmitter : MonoBehaviour
         if(m_spookyTime == null) { 
 m_spookyTime = SpookyTimeManager.Instance;
         }
-        foreach (Audioclips clip in (m_spookyTime.IsSpookyTimeActive() ? m_spookyTimeClips : m_allClips))
+        foreach (Audioclips clip in (m_hasSpookyTimeVariations ? (m_spookyTime.IsSpookyTimeActive() ? m_spookyTimeClips : m_allClips) : m_allClips) )
         {
             if(random < clip.m_probablility + currentProbablilty)
             {

@@ -700,8 +700,10 @@ MonoBehaviour:
   m_allClips:
   - m_clip: {fileID: 8300000, guid: edb6bddb881773646b5c4ddab7e62df8, type: 3}
     m_probablility: 1
-  m_hasSpookyTimeVariations: 0
-  m_spookyTimeClips: []
+  m_hasSpookyTimeVariations: 1
+  m_spookyTimeClips:
+  - m_clip: {fileID: 8300000, guid: edb6bddb881773646b5c4ddab7e62df8, type: 3}
+    m_probablility: 1
   m_playSound: 1
 --- !u!1 &8474759804197688883
 GameObject:
