@@ -23,10 +23,6 @@ public class SoundEmitter : MonoBehaviour
     {
         m_aSource = GetComponent<AudioSource>();
     }
-    private void Start()
-    {
-        
-    }
 
     public void PlayClip()
     {
