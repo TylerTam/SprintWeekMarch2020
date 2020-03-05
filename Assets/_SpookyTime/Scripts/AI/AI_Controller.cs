@@ -43,6 +43,12 @@ public class AI_Controller : MonoBehaviour
         public AIEvents m_aiStunned, m_aiUnStunned;
     }
     
+    
+    private IEnumerator PlaySpawnSound()
+    {
+        yield return 0;
+        m_aiEvents.m_spawn.Invoke();
+    }
     private void Start()
     {
         m_navAgent = GetComponent<GridNavigation_Agent>();
@@ -50,7 +56,8 @@ public class AI_Controller : MonoBehaviour
         m_aiManager = AI_Manager.Instance;
         m_navAgent.m_navGrid = m_aiManager.m_navGrid;
         m_spookyTimeManager = SpookyTimeManager.Instance;
-        m_aiEvents.m_spawn.Invoke();
+        StartCoroutine(PlaySpawnSound());
+
     }
 
     private void OnEnable()
