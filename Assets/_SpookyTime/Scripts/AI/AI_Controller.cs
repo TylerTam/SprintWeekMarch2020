@@ -39,6 +39,7 @@ public class AI_Controller : MonoBehaviour
     public struct AIEventsStruct
     {
         public AIEvents m_playerSpotted;
+        public AIEvents m_spawn;
         public AIEvents m_aiStunned, m_aiUnStunned;
     }
     
@@ -49,6 +50,7 @@ public class AI_Controller : MonoBehaviour
         m_aiManager = AI_Manager.Instance;
         m_navAgent.m_navGrid = m_aiManager.m_navGrid;
         m_spookyTimeManager = SpookyTimeManager.Instance;
+        m_aiEvents.m_spawn.Invoke();
     }
 
     private void OnEnable()

@@ -24,6 +24,7 @@ public class FlowerObject : MonoBehaviour
 
     public FlowerObjectSounds m_flowerPickedUp;
     public FlowerObjectSounds m_flowerSwapped;
+    public FlowerObjectSounds m_flowerReturned;
 
     private void Start()
     {
@@ -112,6 +113,7 @@ public class FlowerObject : MonoBehaviour
         if (Physics2D.OverlapCircle(transform.position, m_flowerRadius, m_safeZone) != null)
         {
             ResetFlower();
+            m_flowerReturned.Invoke();
             m_spookyManager.ChangeSpookyTime(false);
             gameObject.SetActive(false);
 
