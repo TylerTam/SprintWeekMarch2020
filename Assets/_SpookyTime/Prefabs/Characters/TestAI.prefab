@@ -147,6 +147,7 @@ MonoBehaviour:
   m_spookyTimeClips:
   - m_clip: {fileID: 8300000, guid: bf78127af9231224d83fe1c711a94fa1, type: 3}
     m_probablility: 0
+  m_playSound: 1
 --- !u!1 &5636206993720654516
 GameObject:
   m_ObjectHideFlags: 0
@@ -243,7 +244,7 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-        - m_Target: {fileID: 0}
+        - m_Target: {fileID: 8358539016848099239}
           m_MethodName: PlayClip
           m_Mode: 1
           m_Arguments:
@@ -335,7 +336,7 @@ MonoBehaviour:
       m_TypeName: AIEvents, Assembly-CSharp, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   m_sRend: {fileID: 5636206994160595830}
   m_stunnedColor: {r: 1, g: 1, b: 1, a: 0.5176471}
-  m_angryColor: {r: 1, g: 0, b: 0, a: 1}
+  m_angryColor: {r: 1, g: 0.6933962, b: 0.8342682, a: 1}
 --- !u!114 &5636206993720654519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -511,6 +512,7 @@ MonoBehaviour:
     m_probablility: 1
   m_hasSpookyTimeVariations: 0
   m_spookyTimeClips: []
+  m_playSound: 1
 --- !u!1 &5636206994160595828
 GameObject:
   m_ObjectHideFlags: 0
@@ -987,3 +989,4 @@ MonoBehaviour:
     m_probablility: 0.2
   - m_clip: {fileID: 8300000, guid: 2938b9baf92778f4c98aca755583f4d6, type: 3}
     m_probablility: 0.2
+  m_playSound: 1
