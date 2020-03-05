@@ -129,7 +129,6 @@ public class IsPlayerOnGrave : MonoBehaviour
         if (SpookyTimeAcivated == false)
         {         
             m_scoreManager.ChangeScore(m_gravePoints);
-            print("OOf");
         }
 
         m_aiManager.SpawnAI(transform.position);
