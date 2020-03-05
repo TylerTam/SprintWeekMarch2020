@@ -72,6 +72,10 @@ public class IsPlayerOnGrave : MonoBehaviour
         //disable spooky treasure text on start
         SpookyTreasureText.SetActive(false);
     }
+    private void OnEnable()
+    {
+        GraveCurrentHealth = GraveMaxHealth;
+    }
 
     private void Update()
     {
@@ -133,9 +137,11 @@ public class IsPlayerOnGrave : MonoBehaviour
 
         m_aiManager.SpawnAI(transform.position);
         /// change sprites, (maybe destroy grave after a few seconds)
-        Destroy(gameObject);
+        m_spawner.SpawnNewGrave();
+        ObjectPooler.instance.ReturnToPool(this.gameObject);
     }
 
+    public GraveSpawner m_spawner;
    public void SpookyTreasure()
     {
         SpookyTreasureText.SetActive(true);
