@@ -20,6 +20,14 @@ public class SpookyTimeManager : MonoBehaviour
 
     public Color m_spookyImageColor, m_spookyImageColorST;
 
+
+
+    [Header("Spooky countdown")]
+    public UnityEngine.UI.Text m_countdownText;
+    public Vector3 m_powScale, m_startScale;
+    public AnimationCurve m_animCurve;
+    public int m_startingCountdownTextTime;
+
     private void Awake()
     {
         Instance = this;
@@ -32,7 +40,7 @@ public class SpookyTimeManager : MonoBehaviour
         m_spookyTimeBar.fillAmount = p_percent;
     }
 
-
+    private bool m_startedNextPow;
     /// <summary>
     /// The coroutine for when spooky time is charging up
     /// </summary>
@@ -42,6 +50,16 @@ public class SpookyTimeManager : MonoBehaviour
         float timer = 0;
         while (timer < m_timeTillSpookyTime)
         {
+            if (timer > (float)m_startingCountdownTextTime )
+            {
+                if (!m_startedNextPow)
+                {
+                    m_countdownText.gameObject.SetActive(true);
+                    m_startedNextPow = true;
+                    m_countdownText.text = ((int)(m_timeTillSpookyTime - timer)+1).ToString();
+                    StartCoroutine(PowCountdown());
+                }
+            }
             if(timer > m_startSpookyTimer)
             {
                 m_spookyTimeBar.color = m_spookyImageColor;
@@ -51,11 +69,24 @@ public class SpookyTimeManager : MonoBehaviour
             yield return null;
         }
 
+        m_countdownText.gameObject.SetActive(false);
         m_spookyTimeBar.color = m_spookyImageColorST;
         m_spookyTimeActivate.Invoke();
         m_spookyTimeActive = true;
         StartCoroutine(SpookyTimeDuration());
         
+    }
+
+    private IEnumerator PowCountdown()
+    {
+        float timer = 0;
+        while(timer < 1)
+        {
+            timer += Time.deltaTime;
+            m_countdownText.transform.localScale = Vector3.Lerp(m_startScale, m_powScale,m_animCurve.Evaluate(timer / 1f));
+            yield return null;
+        }
+        m_startedNextPow = false;
     }
 
     public bool IsSpookyTimeActive()
