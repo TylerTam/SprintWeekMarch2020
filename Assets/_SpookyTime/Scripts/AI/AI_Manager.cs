@@ -10,8 +10,12 @@ public class AI_Manager : MonoBehaviour
     public GridNavigation m_navGrid;
 
     public GameObject m_aiPrefab;
-    
 
+
+
+    public float m_startingPossibility = .2f;
+    public float m_increasePossibilityAmount = .2f;
+    public float m_maxPossibility = .8f;
     [Header("Debugging")]
     public List<GameObject> m_debuggingGhosts;
     private void Start()
@@ -54,7 +58,6 @@ public class AI_Manager : MonoBehaviour
     public int m_maxAIOnScene;
     private int m_currentAICount;
     public float m_aiSpawnChance;
-    private int m_currentSpawnerCounter;
     public List<Transform> m_spawnLocations;
     public float m_initialSpawnGhostTime = 3;
 
@@ -72,16 +75,19 @@ public class AI_Manager : MonoBehaviour
         float chance = Random.Range(0f, 1f);
         if (chance < m_aiSpawnChance)
         {
-            m_currentSpawnerCounter = 0;
             if (m_currentAICount < m_maxAIOnScene)
             {
+                m_aiSpawnChance = m_startingPossibility;
                 GameObject newGhost = Instantiate(m_aiPrefab, p_spawnLocation, Quaternion.identity);
                 m_currentAICount++;
             }
         }
         else
         {
-            m_currentSpawnerCounter++;
+            if (m_aiSpawnChance + m_increasePossibilityAmount < m_maxPossibility)
+            {
+                m_aiSpawnChance += m_increasePossibilityAmount;
+            }
         }
 
     }
