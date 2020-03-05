@@ -19,9 +19,10 @@ public class TitleScreenAffects : MonoBehaviour
     [SerializeField] float Speed;
     [SerializeField] float SpeedModifier1;
     [SerializeField] float SpeedModifier2;
-    [SerializeField] Color Transparent;
 
     bool Flashed;
+    bool TextFlash;
+    int TextFlashState;
 
     void Start()
     {
@@ -31,6 +32,8 @@ public class TitleScreenAffects : MonoBehaviour
         GroupNameText.SetActive(false);
 
         Flashed = false;
+        TextFlash = false;
+        TextFlashState = 0;
     }
 
     void Update()
@@ -39,24 +42,42 @@ public class TitleScreenAffects : MonoBehaviour
         if (Image2.transform.position.y < Image2Goal.position.y) { Image2.transform.position += new Vector3(0, Speed*SpeedModifier1); }
         if (Image3.transform.position.y < Image3Goal.position.y) { Image3.transform.position += new Vector3(0, Speed*SpeedModifier2); }
 
-        if(Image1.transform.position.y >= Image1Goal.position.y && Image2.transform.position.y >= Image2Goal.position.y && Image2.transform.position.y >= Image2Goal.position.y && Flashed == false)
+        if(Image1.transform.position.y >= Image1Goal.position.y && Image2.transform.position.y >= Image2Goal.position.y && Image3.transform.position.y >= Image3Goal.position.y
+             && Flashed == false)
         { StartCoroutine(FlashAffect()); }
+
+       if(PressToStartText.activeSelf == false && TextFlash == true)
+        {
+    //        StartCoroutine(TextFlashing());
+        }
     }
     
     IEnumerator FlashAffect()
     {
         Flashed = true;
-       yield return new WaitForSeconds(0.5f);
+       yield return new WaitForSeconds(0.2f);
         WhiteScreenImage.SetActive(true);
         yield return new WaitForSeconds(0.2f);
         WhiteScreenImage.SetActive(false);
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.1f);
         WhiteScreenImage.SetActive(true);
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.1f);
         TitleText.SetActive(true);
         PressToStartText.SetActive(true);
         GroupNameText.SetActive(true);
         WhiteScreenImage.SetActive(false);
-
+        TextFlash = true;
     }
+
+   /* IEnumerator TextFlashing()
+    {
+        PressToStartText.SetActive(true);
+        TextFlash = false;
+        yield return new WaitForSeconds(0.3f);
+        PressToStartText.SetActive(false);
+        yield return new WaitForSeconds(0.3f);
+        TextFlash = true;
+    } */
+
+
 }
