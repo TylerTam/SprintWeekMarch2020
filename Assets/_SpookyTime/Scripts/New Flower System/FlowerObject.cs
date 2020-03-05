@@ -117,6 +117,7 @@ public class FlowerObject : MonoBehaviour
 
         if (Physics2D.OverlapCircle(transform.position, m_flowerRadius, m_safeZone) != null)
         {
+            m_currentPlayerTransform = null;
             m_scoreManager.ChangeScore(m_flowerAwardScore);
             ResetFlower();
             m_flowerReturned.Invoke();
