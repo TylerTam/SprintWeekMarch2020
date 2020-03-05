@@ -228,7 +228,7 @@ MonoBehaviour:
   m_spawnInTime: 2
   m_defaultLerpTime: 0.4
   m_spookyTimeLerpTime: 0.2
-  m_stunTime: 3
+  m_stunTime: 1.5
   m_recalculatePathDistance: 0.1
   m_aiEvents:
     m_playerSpotted:
