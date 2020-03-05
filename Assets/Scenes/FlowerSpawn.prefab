@@ -141,10 +141,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_allClips:
-  - m_clip: {fileID: 8300000, guid: d8430ce8fd340a04a977b54df916b077, type: 3}
+  - m_clip: {fileID: 8300000, guid: 7c2818774848f254a9607dd82a4a53f4, type: 3}
     m_probablility: 1
   m_hasSpookyTimeVariations: 0
   m_spookyTimeClips: []
+  m_playSound: 1
 --- !u!1 &2063467305288393540
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,6 +335,11 @@ MonoBehaviour:
       PublicKeyToken=null
   m_flowerSwapped:
     m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: FlowerObjectSounds, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
+      PublicKeyToken=null
+  m_flowerReturned:
+    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 762420013537281229}
         m_MethodName: PlayClip
@@ -341,22 +347,6 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-    m_TypeName: FlowerObjectSounds, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
-      PublicKeyToken=null
-  m_flowerReturned:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -474,10 +464,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_allClips:
-  - m_clip: {fileID: 8300000, guid: e0c8d22bf34b17849ab7a3a958dcc752, type: 3}
+  - m_clip: {fileID: 8300000, guid: ee45bfc6bfeb0314094314318b4e9e68, type: 3}
     m_probablility: 1
   m_hasSpookyTimeVariations: 0
   m_spookyTimeClips: []
+  m_playSound: 1
 --- !u!1 &5816961434954754575
 GameObject:
   m_ObjectHideFlags: 0

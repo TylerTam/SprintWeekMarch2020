@@ -944,6 +944,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5863671799586731998, guid: 84cf1bb269e935544b7e458c2e77b241,
         type: 3}
+      propertyPath: m_playersDeathEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5863671799586731998, guid: 84cf1bb269e935544b7e458c2e77b241,
+        type: 3}
+      propertyPath: m_jumpscareEvent.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5863671799586731998, guid: 84cf1bb269e935544b7e458c2e77b241,
+        type: 3}
       propertyPath: m_playerRespawns.Array.data[0]
       value: 
       objectReference: {fileID: 1773624867}
@@ -981,6 +991,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_health
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5863671799586731998, guid: 84cf1bb269e935544b7e458c2e77b241,
+        type: 3}
+      propertyPath: m_playersDeathEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5863671799586731998, guid: 84cf1bb269e935544b7e458c2e77b241,
+        type: 3}
+      propertyPath: m_playersDeathEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5863671799586731998, guid: 84cf1bb269e935544b7e458c2e77b241,
+        type: 3}
+      propertyPath: m_jumpscareEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5863671799586731998, guid: 84cf1bb269e935544b7e458c2e77b241,
+        type: 3}
+      propertyPath: m_jumpscareEvent.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5816961436333878547, guid: 84cf1bb269e935544b7e458c2e77b241,
         type: 3}
@@ -1162,6 +1192,21 @@ PrefabInstance:
       propertyPath: m_allClips.Array.data[0].m_clip
       value: 
       objectReference: {fileID: 8300000, guid: d81d849ccd9c7fb46888698ffa01ad5e, type: 3}
+    - target: {fileID: 5753232704983365689, guid: 84cf1bb269e935544b7e458c2e77b241,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7582125792686330286, guid: 84cf1bb269e935544b7e458c2e77b241,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4191137303750184985, guid: 84cf1bb269e935544b7e458c2e77b241,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84cf1bb269e935544b7e458c2e77b241, type: 3}
 --- !u!1 &236478181
