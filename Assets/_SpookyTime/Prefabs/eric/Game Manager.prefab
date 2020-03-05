@@ -562,6 +562,7 @@ GameObject:
   - component: {fileID: 5863671800324210500}
   - component: {fileID: 5863671800324210501}
   - component: {fileID: 5863671800324210502}
+  - component: {fileID: 7635281153474304031}
   m_Layer: 0
   m_Name: PixelPerfectCamera
   m_TagString: Untagged
@@ -646,6 +647,14 @@ MonoBehaviour:
   m_CropFrameX: 0
   m_CropFrameY: 0
   m_StretchFill: 0
+--- !u!81 &7635281153474304031
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5863671800324210503}
+  m_Enabled: 1
 --- !u!1001 &212916624
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -740,11 +749,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5863671800004941260}
     m_Modifications:
-    - target: {fileID: 6102317938756670422, guid: a1c029886768bb64fa586e4e69d45db3,
-        type: 3}
-      propertyPath: m_Name
-      value: AIManager
-      objectReference: {fileID: 0}
     - target: {fileID: 6102317938756670416, guid: a1c029886768bb64fa586e4e69d45db3,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -799,6 +803,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6102317938756670422, guid: a1c029886768bb64fa586e4e69d45db3,
+        type: 3}
+      propertyPath: m_Name
+      value: AIManager
       objectReference: {fileID: 0}
     - target: {fileID: 6102317937014777613, guid: a1c029886768bb64fa586e4e69d45db3,
         type: 3}
