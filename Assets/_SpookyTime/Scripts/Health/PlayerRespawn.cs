@@ -19,6 +19,9 @@ public class PlayerRespawn : MonoBehaviour
     private PlayerHealth m_playerHealth;
 
     public RespawnEvents m_respawnEvents;
+
+    public GameObject m_visual;
+
     public bool m_isDead;
     [System.Serializable]
     public struct RespawnEvents
@@ -33,9 +36,18 @@ public class PlayerRespawn : MonoBehaviour
     public void OnDied()
     {
         m_isDead = true;
-        m_playerHealth.TakeDamage();
+        m_playerHealth.TakeDamage(this);
         m_playerInput.ChangeInputState(false);
-        StartCoroutine(RespawnMe());
+        
+    }
+
+    public void OtherPlayerDied()
+    {
+        m_playerDetectionCol.enabled = false;
+        m_playerCollider.enabled = false;
+        m_visual.SetActive(false);
+        m_isDead = true;
+        m_playerInput.ChangeInputState(false);
     }
 
     private IEnumerator RespawnMe()
@@ -62,6 +74,20 @@ public class PlayerRespawn : MonoBehaviour
             timer += Time.deltaTime;
             yield return null;
         }
+
+        ForceRespawn();
+        #endregion
+    }
+
+    public void StartRespawnFunction()
+    {
+        StartCoroutine(RespawnMe());
+    }
+
+    public void ForceRespawn()
+    {
+        
+        m_visual.SetActive(true);
         transform.position = m_spawnPoint.position;
         m_playerInput.ChangeInputState(true);
         m_respawnEvents.m_spawnEvent.Invoke();
@@ -69,6 +95,5 @@ public class PlayerRespawn : MonoBehaviour
         m_playerDetectionCol.enabled = true;
         m_playerCollider.enabled = true;
         m_isDead = false;
-        #endregion
     }
 }

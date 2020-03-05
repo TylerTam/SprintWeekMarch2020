@@ -511,6 +511,7 @@ MonoBehaviour:
         m_Calls: []
       m_TypeName: PlayerRespawnEvent, Assembly-CSharp, Version=0.0.0.0, Culture=neutral,
         PublicKeyToken=null
+  m_visual: {fileID: 1650347071364031745}
   m_isDead: 0
 --- !u!114 &9106878053758751119
 MonoBehaviour:

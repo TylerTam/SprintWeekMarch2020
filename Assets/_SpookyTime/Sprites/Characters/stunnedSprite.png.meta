@@ -1,19 +1,16 @@
 fileFormatVersion: 2
-guid: dec1e3be3833ee94fa7fd7da1915ff0b
+guid: 28e5cc2e3d98159499fb0eaf677da958
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2277696416768517631
-    second: ghost_stun_0
+      213: 1513161803264744106
+    second: stunnedSprite_0
   - first:
-      213: -4104159730831806137
-    second: ghost_stun_1
+      213: -4430843407883802181
+    second: stunnedSprite_1
   - first:
-      213: 7919062792385741927
-    second: ghost_stun_2
-  - first:
-      213: 4643105457097938437
-    second: ghost_stun_3
+      213: 4276685155740546400
+    second: stunnedSprite_2
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -134,7 +131,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ghost_stun_0
+      name: stunnedSprite_0
       rect:
         serializedVersion: 2
         x: 0
@@ -148,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1b113e04cf2a334682b8e75e5d39c3d
-      internalID: 2277696416768517631
+      spriteID: 4ce13d04a6240df44b717e396d5006d6
+      internalID: 1513161803264744106
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ghost_stun_1
+      name: stunnedSprite_1
       rect:
         serializedVersion: 2
         x: 32
@@ -169,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dabf8e48f86a74a4eb9895cdff0e78de
-      internalID: -4104159730831806137
+      spriteID: 0ed1129eeb836824284f7f06f9309303
+      internalID: -4430843407883802181
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ghost_stun_2
+      name: stunnedSprite_2
       rect:
         serializedVersion: 2
         x: 0
@@ -190,29 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50abe4a1955e4be46970be08f9c2211b
-      internalID: 7919062792385741927
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: ghost_stun_3
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 0
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3c619d998b4238a46aa5495c50d57c5d
-      internalID: 4643105457097938437
+      spriteID: 4f098fc771fcf7d49bcce1ecd4537053
+      internalID: 4276685155740546400
       vertices: []
       indices: 
       edges: []

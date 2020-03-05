@@ -1,7 +1,217 @@
 fileFormatVersion: 2
 guid: fe73e9d3b7863654c95312b707b9983b
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -1897780329468185098
+    second: Jumpscare_Gameover_title_ST_0
+  - first:
+      213: 1817097643322000801
+    second: Jumpscare_Gameover_title_ST_1
+  - first:
+      213: 2586628607856998303
+    second: Jumpscare_Gameover_title_ST_2
+  - first:
+      213: 6126813999052033730
+    second: Jumpscare_Gameover_title_ST_3
+  - first:
+      213: 6516376346066191165
+    second: Jumpscare_Gameover_title_ST_4
+  - first:
+      213: 327654056049651930
+    second: Jumpscare_Gameover_title_ST_5
+  - first:
+      213: 388755937030747792
+    second: Jumpscare_Gameover_title_ST_6
+  - first:
+      213: -6410583692896623713
+    second: Jumpscare_Gameover_title_ST_7
+  - first:
+      213: 7749499856861331041
+    second: Jumpscare_Gameover_title_ST_8
+  - first:
+      213: 7322848627724397031
+    second: Jumpscare_Gameover_title_ST_9
+  - first:
+      213: -7224366562086250938
+    second: Jumpscare_Gameover_title_ST_10
+  - first:
+      213: -8763821732961405682
+    second: Jumpscare_Gameover_title_ST_11
+  - first:
+      213: 3613676337474423419
+    second: Jumpscare_Gameover_title_ST_12
+  - first:
+      213: 5481921943201518813
+    second: Jumpscare_Gameover_title_ST_13
+  - first:
+      213: 50870786755830459
+    second: Jumpscare_Gameover_title_ST_14
+  - first:
+      213: -7956252067074503229
+    second: Jumpscare_Gameover_title_ST_15
+  - first:
+      213: 3268422256955588392
+    second: Jumpscare_Gameover_title_ST_16
+  - first:
+      213: 9111448907400619971
+    second: Jumpscare_Gameover_title_ST_17
+  - first:
+      213: 2371019448456160761
+    second: Jumpscare_Gameover_title_ST_18
+  - first:
+      213: 3636913953943815528
+    second: Jumpscare_Gameover_title_ST_19
+  - first:
+      213: -1177468759125821752
+    second: Jumpscare_Gameover_title_ST_20
+  - first:
+      213: 8738717880677255911
+    second: Jumpscare_Gameover_title_ST_21
+  - first:
+      213: 8349313420895531800
+    second: Jumpscare_Gameover_title_ST_22
+  - first:
+      213: -8191904951833290984
+    second: Jumpscare_Gameover_title_ST_23
+  - first:
+      213: -1035402258820666037
+    second: Jumpscare_Gameover_title_ST_24
+  - first:
+      213: 3397640097434546255
+    second: Jumpscare_Gameover_title_ST_25
+  - first:
+      213: -7434220445651021921
+    second: Jumpscare_Gameover_title_ST_26
+  - first:
+      213: 3381593007318812190
+    second: Jumpscare_Gameover_title_ST_27
+  - first:
+      213: 6379976963267447458
+    second: Jumpscare_Gameover_title_ST_28
+  - first:
+      213: -1358405175069723585
+    second: Jumpscare_Gameover_title_ST_29
+  - first:
+      213: -292884906720745406
+    second: Jumpscare_Gameover_title_ST_30
+  - first:
+      213: -473994977223196438
+    second: Jumpscare_Gameover_title_ST_31
+  - first:
+      213: 2512870068167014796
+    second: Jumpscare_Gameover_title_ST_32
+  - first:
+      213: 7901146740606889010
+    second: Jumpscare_Gameover_title_ST_33
+  - first:
+      213: 4054701605678636105
+    second: Jumpscare_Gameover_title_ST_34
+  - first:
+      213: -5252007515105349566
+    second: Jumpscare_Gameover_title_ST_35
+  - first:
+      213: 3044665451561822494
+    second: Jumpscare_Gameover_title_ST_36
+  - first:
+      213: 5489913438268205912
+    second: Jumpscare_Gameover_title_ST_37
+  - first:
+      213: -2566856102001653803
+    second: Jumpscare_Gameover_title_ST_38
+  - first:
+      213: 4544730997684287617
+    second: Jumpscare_Gameover_title_ST_39
+  - first:
+      213: 3168182798427837192
+    second: Jumpscare_Gameover_title_ST_40
+  - first:
+      213: 4265112391132582082
+    second: Jumpscare_Gameover_title_ST_41
+  - first:
+      213: 2614559516713822844
+    second: Jumpscare_Gameover_title_ST_42
+  - first:
+      213: -533078008380927851
+    second: Jumpscare_Gameover_title_ST_43
+  - first:
+      213: -2770736719515461425
+    second: Jumpscare_Gameover_title_ST_44
+  - first:
+      213: -8481623095110663701
+    second: Jumpscare_Gameover_title_ST_45
+  - first:
+      213: -7764053966049553226
+    second: Jumpscare_Gameover_title_ST_46
+  - first:
+      213: 8782513341814384861
+    second: Jumpscare_Gameover_title_ST_47
+  - first:
+      213: 2033797985830970181
+    second: Jumpscare_Gameover_title_ST_48
+  - first:
+      213: -4766104245628253964
+    second: Jumpscare_Gameover_title_ST_49
+  - first:
+      213: 3402773398610478347
+    second: Jumpscare_Gameover_title_ST_50
+  - first:
+      213: -1226229453359004858
+    second: Jumpscare_Gameover_title_ST_51
+  - first:
+      213: -8299809265322817525
+    second: Jumpscare_Gameover_title_ST_52
+  - first:
+      213: -9114824822941937729
+    second: Jumpscare_Gameover_title_ST_53
+  - first:
+      213: -8566879162997910913
+    second: Jumpscare_Gameover_title_ST_54
+  - first:
+      213: -3468748363500392069
+    second: Jumpscare_Gameover_title_ST_55
+  - first:
+      213: -4028323040364449127
+    second: Jumpscare_Gameover_title_ST_56
+  - first:
+      213: -6842224138799348223
+    second: Jumpscare_Gameover_title_ST_57
+  - first:
+      213: 2836544289972135229
+    second: Jumpscare_Gameover_title_ST_58
+  - first:
+      213: -2153943350158521815
+    second: Jumpscare_Gameover_title_ST_59
+  - first:
+      213: 1613688854052949458
+    second: Jumpscare_Gameover_title_ST_60
+  - first:
+      213: 5400525736192086612
+    second: Jumpscare_Gameover_title_ST_61
+  - first:
+      213: 4782983361706331981
+    second: Jumpscare_Gameover_title_ST_62
+  - first:
+      213: 5420374775738351964
+    second: Jumpscare_Gameover_title_ST_63
+  - first:
+      213: 4084868999968757761
+    second: Jumpscare_Gameover_title_ST_64
+  - first:
+      213: 8678832016102699122
+    second: Jumpscare_Gameover_title_ST_65
+  - first:
+      213: -6886434535145799889
+    second: Jumpscare_Gameover_title_ST_66
+  - first:
+      213: -7724758911072030302
+    second: Jumpscare_Gameover_title_ST_67
+  - first:
+      213: -1541508018132189560
+    second: Jumpscare_Gameover_title_ST_68
+  - first:
+      213: -8314249303665777168
+    second: Jumpscare_Gameover_title_ST_69
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -31,7 +241,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -40,12 +250,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -62,7 +272,55 @@ TextureImporter:
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
-    textureFormat: -1
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: 4
     textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
@@ -72,7 +330,1477 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1300
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5457d784aace838488350fe028e7183f
+      internalID: -1897780329468185098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_1
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 1300
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e574f21c2b93c249bcee47eac86b915
+      internalID: 1817097643322000801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_2
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 1300
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65cffadc2da685f42b900d874a938560
+      internalID: 2586628607856998303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_3
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 1300
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 708680387777142489b0bd1d6ae420b1
+      internalID: 6126813999052033730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_4
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 1300
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51eb394476f840a40b4f4bd555df7e41
+      internalID: 6516376346066191165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1200
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d09874b9faf86c54399bb2f5631d74ab
+      internalID: 327654056049651930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_6
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 1200
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bf0490e8ec977245aadcef4d48a2479
+      internalID: 388755937030747792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_7
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 1200
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a09e846865edf43479e65288ef777b5c
+      internalID: -6410583692896623713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_8
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 1200
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 817528993f936324f9403ffefa1cd918
+      internalID: 7749499856861331041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_9
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 1200
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55e7a006c0d14014abccc71050b9db6e
+      internalID: 7322848627724397031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1100
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a950866be034774093abcd840588ab4
+      internalID: -7224366562086250938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_11
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 1100
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f113ee95d5daf4880b696590530747
+      internalID: -8763821732961405682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_12
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 1100
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47a0332de92b1ec45bc6f0dc70e7ea47
+      internalID: 3613676337474423419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_13
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 1100
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1aab54b85450cbd4a90d80055faeedcd
+      internalID: 5481921943201518813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_14
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 1100
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee09b378028e7314a8303100b21658a0
+      internalID: 50870786755830459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1000
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97e4200062f2e2e4dace2ffa9919b6aa
+      internalID: -7956252067074503229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_16
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 1000
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f9bee226fac8be489772841e3f74183
+      internalID: 3268422256955588392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_17
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 1000
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe7fa6795eb7ef04ca6b2ef48d328765
+      internalID: 9111448907400619971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_18
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 1000
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bae579e88542ff04d989813026c238f9
+      internalID: 2371019448456160761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_19
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 1000
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab3029eef4a6c634aa1219a1711343fc
+      internalID: 3636913953943815528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 900
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1b9551568bd31641836af09d0d08e94
+      internalID: -1177468759125821752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_21
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 900
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33da1898f3b04474ca21f90c07bdfc63
+      internalID: 8738717880677255911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_22
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 900
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c353565fb04b46d41a74d8765f24cd61
+      internalID: 8349313420895531800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_23
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 900
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90020730b49a2b047831172b3131a49c
+      internalID: -8191904951833290984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_24
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 900
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffb621b0682786d49be4678a5ef23b23
+      internalID: -1035402258820666037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 800
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 626338bfd29cab741929edda6aa91a90
+      internalID: 3397640097434546255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_26
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 800
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a31cfccaabbb574a915eb88649517f1
+      internalID: -7434220445651021921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_27
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 800
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e5195fd3bde798459f8549b1c8ce0b0
+      internalID: 3381593007318812190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_28
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 800
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26f888c18890f5a47849282dbfb09085
+      internalID: 6379976963267447458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_29
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 800
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fe174c0999a9164ea73e7a59f04bd3d
+      internalID: -1358405175069723585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 700
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c9dabcbd340b524a9d4b400ba754c68
+      internalID: -292884906720745406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_31
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 700
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2024b0335e94a141a72f6e47f1cb59d
+      internalID: -473994977223196438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_32
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 700
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e90d88fa71b002944a2fb0675aa8e6fe
+      internalID: 2512870068167014796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_33
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 700
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23028058804eae04c99069819bd99cc2
+      internalID: 7901146740606889010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_34
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 700
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd35d3658f80c644f9e32442710b6b7f
+      internalID: 4054701605678636105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 600
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 838fcd73c6ad5654fb62c647a80edb1d
+      internalID: -5252007515105349566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_36
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 600
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10bd7394a2cde5c4db255d3a528888b1
+      internalID: 3044665451561822494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_37
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 600
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 750aa0f27c4bc114eb5c3f43b20607fd
+      internalID: 5489913438268205912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_38
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 600
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08bf7c03559534443a8e458c42623651
+      internalID: -2566856102001653803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_39
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 600
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f453d36220aad604481450ed224771e2
+      internalID: 4544730997684287617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_40
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 500
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e22b47628a2a7e4fa7b674d10901089
+      internalID: 3168182798427837192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_41
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 500
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 108f39da092c5934398cd37ccd27ce15
+      internalID: 4265112391132582082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_42
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 500
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8aa91bfa1eac7b842b4b3e985566bc97
+      internalID: 2614559516713822844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_43
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 500
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1d2d2121dca7c141a9d543b013e821b
+      internalID: -533078008380927851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_44
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 500
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95a21a2778e82f14e819ffdec14b31ad
+      internalID: -2770736719515461425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 400
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97909faa14fb9ea419364a0677340ef7
+      internalID: -8481623095110663701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_46
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 400
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9910ce8b1873da8409ea1474b2bc3a9e
+      internalID: -7764053966049553226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_47
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 400
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e862d946887bd1141b63a376ac6742b6
+      internalID: 8782513341814384861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_48
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 400
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f23b02709235214c8da9e15a30b5d8f
+      internalID: 2033797985830970181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_49
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 400
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 590e01a7dbc530644ae049624e73cde9
+      internalID: -4766104245628253964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_50
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 300
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6fda05216873ff4983fadd4ac21e407
+      internalID: 3402773398610478347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_51
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 300
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66364d12f236f82479b61ed59322daad
+      internalID: -1226229453359004858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_52
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 300
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 063b0f1fab3cf3141b6ce6557a2d273d
+      internalID: -8299809265322817525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_53
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 300
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f19b8a3ca34ff4740aee498d718cbb65
+      internalID: -9114824822941937729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_54
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 300
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb9709de7ebe4b943bae78c6dc1b4fad
+      internalID: -8566879162997910913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_55
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 200
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8b650fcd3db0794e97ff5586a70d74e
+      internalID: -3468748363500392069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_56
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 200
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cb194418ea76404797271a27b0a07f5
+      internalID: -4028323040364449127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_57
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 200
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8be10380ce029614883173e3fe69d908
+      internalID: -6842224138799348223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_58
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 200
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be484a0c2f857c347bc94ba7619715c3
+      internalID: 2836544289972135229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_59
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 200
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b1ac5571c9ca074da85a079a797a13a
+      internalID: -2153943350158521815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 100
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 659ae40a5af23d24e91dbe86ec59761f
+      internalID: 1613688854052949458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_61
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 100
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8344c19610f53fb49bc49b710dbbf52b
+      internalID: 5400525736192086612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_62
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 100
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53a34683dff27374ba74922ce0e21771
+      internalID: 4782983361706331981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_63
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 100
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d73004208c495ae4c9bbc18e1e7ed57b
+      internalID: 5420374775738351964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_64
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 100
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e06d6dc3db00db848b8207abd6f6c3de
+      internalID: 4084868999968757761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_65
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ace19bab7784b84db43318435696d39
+      internalID: 8678832016102699122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_66
+      rect:
+        serializedVersion: 2
+        x: 580
+        y: 0
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 592605d11a618854ca30916b440f257f
+      internalID: -6886434535145799889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_67
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 0
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b352cc486423d4546abc47e094250c53
+      internalID: -7724758911072030302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_68
+      rect:
+        serializedVersion: 2
+        x: 1740
+        y: 0
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f66d7c4d0eebda842872f50770f1d306
+      internalID: -1541508018132189560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Jumpscare_Gameover_title_ST_69
+      rect:
+        serializedVersion: 2
+        x: 2320
+        y: 0
+        width: 580
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a769d690317e324c8bf03f9d820a5f4
+      internalID: -8314249303665777168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

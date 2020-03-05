@@ -6,7 +6,15 @@ public class FlowerSpawningManager : MonoBehaviour
 {
     public List<Transform> m_spawnLocations;
     public FlowerObject m_flowerSpawn;
+    public GameObject m_flowerGlow;
 
+    private SpookyTimeManager m_spookyTime;
+    
+
+    private void Start()
+    {
+        m_spookyTime = SpookyTimeManager.Instance;
+    }
     public void SpawnFlower()
     {
         m_flowerSpawn.gameObject.SetActive(true);
@@ -15,6 +23,22 @@ public class FlowerSpawningManager : MonoBehaviour
         m_flowerSpawn.ResetFlower();
         
     }
+
+
+    private void Update()
+    {
+        m_flowerGlow.SetActive(m_spookyTime.IsSpookyTimeActive());
+    }
+    public void FlowerPickedUp()
+    {
+        m_flowerGlow.transform.position = Vector3.zero;
+    }
+    public void FlowerDropped()
+    {
+        m_flowerGlow.transform.position = m_flowerSpawn.transform.position;
+    }
+
+    
 
 
 }

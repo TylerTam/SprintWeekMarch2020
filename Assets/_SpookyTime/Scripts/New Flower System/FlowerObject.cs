@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[System.Serializable]
+public class FlowerObjectSounds : UnityEngine.Events.UnityEvent { }
 public class FlowerObject : MonoBehaviour
 {
     public LayerMask m_playerMask, m_safeZone;
@@ -18,13 +20,20 @@ public class FlowerObject : MonoBehaviour
     private SpookyTimeManager m_spookyManager;
     private PlayerRespawn m_playerRespawn;
 
+    public FlowerSpawningManager m_flowerManager;
+
+    public FlowerObjectSounds m_flowerPickedUp;
+    public FlowerObjectSounds m_flowerSwapped;
+
     private void Start()
     {
         m_spookyManager = SpookyTimeManager.Instance;
+        
     }
     public void ResetFlower()
     {
-        
+
+        m_flowerManager.FlowerDropped();
         m_flowerVisual.transform.localPosition = Vector3.zero;
         transform.parent = null;
         m_playerRespawn = null;
@@ -80,6 +89,7 @@ public class FlowerObject : MonoBehaviour
                         transform.localPosition = Vector3.zero;
                         m_playerRespawn = m_currentPlayerTransform.GetComponent<PlayerRespawn>();
                         ObjectStatus(true);
+                        m_flowerSwapped.Invoke();
                         StartCoroutine(CanPickUp());
                     }
                 }
@@ -93,6 +103,8 @@ public class FlowerObject : MonoBehaviour
                 m_playerRespawn = m_currentPlayerTransform.GetComponent<PlayerRespawn>();
                 ObjectStatus(true);
                 StartCoroutine(CanPickUp());
+                m_flowerPickedUp.Invoke();
+                m_flowerManager.FlowerPickedUp();
             }
         }
 

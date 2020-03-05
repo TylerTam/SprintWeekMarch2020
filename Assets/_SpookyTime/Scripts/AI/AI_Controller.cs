@@ -32,6 +32,9 @@ public class AI_Controller : MonoBehaviour
     public float m_recalculatePathDistance;
 
     public AIEventsStruct m_aiEvents;
+
+    public SpriteRenderer m_sRend;
+    public Color m_stunnedColor, m_angryColor;
     [System.Serializable]
     public struct AIEventsStruct
     {
@@ -87,10 +90,12 @@ public class AI_Controller : MonoBehaviour
     public void ChangeState(AIStates p_newState)
     {
         m_currentState = p_newState;
+        m_sRend.color = Color.white;
         switch (p_newState)
         {
             case AIStates.CHASE:
                 m_aiEvents.m_playerSpotted.Invoke();
+                m_sRend.color = m_angryColor;
                 break;
             case AIStates.WANDER:
                 m_currentPatrolPoint = m_aiManager.GiveNewPatrolPoint();
@@ -100,6 +105,7 @@ public class AI_Controller : MonoBehaviour
                 StartCoroutine(GhostSpawn());
                 break;
             case AIStates.STUN:
+                m_sRend.color = m_stunnedColor;
                 m_aiEvents.m_aiStunned.Invoke();
                 
                 StartCoroutine(GhostStun());

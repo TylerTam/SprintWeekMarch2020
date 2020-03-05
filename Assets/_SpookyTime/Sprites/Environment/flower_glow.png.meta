@@ -1,19 +1,31 @@
 fileFormatVersion: 2
-guid: dec1e3be3833ee94fa7fd7da1915ff0b
+guid: f09e015adc352734ab4b545e811e29cf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2277696416768517631
-    second: ghost_stun_0
+      213: 8161633164830468257
+    second: flower_glow_0
   - first:
-      213: -4104159730831806137
-    second: ghost_stun_1
+      213: -8215698922974649828
+    second: flower_glow_1
   - first:
-      213: 7919062792385741927
-    second: ghost_stun_2
+      213: -1732829457470670746
+    second: flower_glow_2
   - first:
-      213: 4643105457097938437
-    second: ghost_stun_3
+      213: -4680573050604205597
+    second: flower_glow_3
+  - first:
+      213: 6520669269610983656
+    second: flower_glow_4
+  - first:
+      213: 5285528205707783010
+    second: flower_glow_5
+  - first:
+      213: 5504290614166003688
+    second: flower_glow_6
+  - first:
+      213: -736634969565090997
+    second: flower_glow_7
   externalObjects: {}
   serializedVersion: 10
   mipmaps:
@@ -134,13 +146,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ghost_stun_0
+      name: flower_glow_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 32
-        width: 32
-        height: 32
+        y: 192
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -148,20 +160,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1b113e04cf2a334682b8e75e5d39c3d
-      internalID: 2277696416768517631
+      spriteID: 3193aee3a64ebe34d97434483ae14c0f
+      internalID: 8161633164830468257
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ghost_stun_1
+      name: flower_glow_1
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
+        x: 96
+        y: 192
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,20 +181,104 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dabf8e48f86a74a4eb9895cdff0e78de
-      internalID: -4104159730831806137
+      spriteID: 1fd9672ec0058934c91143a42dc0c4ed
+      internalID: -8215698922974649828
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ghost_stun_2
+      name: flower_glow_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 724bcdf38540c4046b866341e7c5b982
+      internalID: -1732829457470670746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flower_glow_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bb34611733b4e14ca87ff9bee47f37e
+      internalID: -4680573050604205597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flower_glow_4
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4faa18c3f0762e479c07b19dea5cd84
+      internalID: 6520669269610983656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flower_glow_5
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee760a033a3ad024889c8bb7ffbc0ecc
+      internalID: 5285528205707783010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: flower_glow_6
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -190,20 +286,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 50abe4a1955e4be46970be08f9c2211b
-      internalID: 7919062792385741927
+      spriteID: e81d4791614551a49b6e7e8bef7c9d60
+      internalID: 5504290614166003688
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ghost_stun_3
+      name: flower_glow_7
       rect:
         serializedVersion: 2
-        x: 32
+        x: 96
         y: 0
-        width: 32
-        height: 32
+        width: 96
+        height: 96
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,8 +307,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c619d998b4238a46aa5495c50d57c5d
-      internalID: 4643105457097938437
+      spriteID: f7560095c57d9614c977959f12a3a0be
+      internalID: -736634969565090997
       vertices: []
       indices: 
       edges: []
