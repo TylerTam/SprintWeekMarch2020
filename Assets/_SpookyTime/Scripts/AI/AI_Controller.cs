@@ -195,6 +195,7 @@ public class AI_Controller : MonoBehaviour
             timer += Time.deltaTime;
             yield return null;
         }
+        if (IsStunned()) yield break;
         ChangeState(AIStates.WANDER);
     }
 

@@ -21,10 +21,11 @@ public class PlayerDigging : MonoBehaviour
         {
             if (CheckInput())
             {
+                m_startDigging.Invoke();
                 if (GraveInRadius())
                 {
                     m_canDig = false;
-                    m_startDigging.Invoke();
+                    
                     m_currentGrave.playerDiggedGrave();
                 }
             }

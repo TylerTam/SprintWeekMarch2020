@@ -806,6 +806,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 427907635980639285, guid: 84cf1bb269e935544b7e458c2e77b241,
+        type: 3}
+      propertyPath: m_aiSpawnChance
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 5863671799586731998, guid: 84cf1bb269e935544b7e458c2e77b241,
         type: 3}
       propertyPath: m_playerRespawns.Array.data[0]
@@ -841,6 +846,15 @@ PrefabInstance:
       propertyPath: m_continuePlayEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 51802998}
+    - target: {fileID: 5863671799586731998, guid: 84cf1bb269e935544b7e458c2e77b241,
+        type: 3}
+      propertyPath: m_health
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 477691560, guid: 84cf1bb269e935544b7e458c2e77b241, type: 3}
+      propertyPath: m_spookyTimeActivate.m_PersistentCalls.m_Calls.Array.size
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 477691560, guid: 84cf1bb269e935544b7e458c2e77b241, type: 3}
       propertyPath: m_spookyTimeActivate.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -885,6 +899,43 @@ PrefabInstance:
       propertyPath: m_spookyTimeBar
       value: 
       objectReference: {fileID: 506700050}
+    - target: {fileID: 477691560, guid: 84cf1bb269e935544b7e458c2e77b241, type: 3}
+      propertyPath: m_spookyTimeActivate.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 492198618}
+    - target: {fileID: 477691560, guid: 84cf1bb269e935544b7e458c2e77b241, type: 3}
+      propertyPath: m_spookyTimeActivate.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 477691560, guid: 84cf1bb269e935544b7e458c2e77b241, type: 3}
+      propertyPath: m_spookyTimeDeactivate.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_BoolArgument
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 477691560, guid: 84cf1bb269e935544b7e458c2e77b241, type: 3}
+      propertyPath: m_spookyTimeActivate.m_PersistentCalls.m_Calls.Array.data[6].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 477691560, guid: 84cf1bb269e935544b7e458c2e77b241, type: 3}
+      propertyPath: m_spookyTimeActivate.m_PersistentCalls.m_Calls.Array.data[6].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 477691560, guid: 84cf1bb269e935544b7e458c2e77b241, type: 3}
+      propertyPath: m_spookyTimeActivate.m_PersistentCalls.m_Calls.Array.data[6].m_Target
+      value: 
+      objectReference: {fileID: 348440060}
+    - target: {fileID: 477691560, guid: 84cf1bb269e935544b7e458c2e77b241, type: 3}
+      propertyPath: m_spookyTimeActivate.m_PersistentCalls.m_Calls.Array.data[6].m_MethodName
+      value: SpawnFlower
+      objectReference: {fileID: 0}
+    - target: {fileID: 477691560, guid: 84cf1bb269e935544b7e458c2e77b241, type: 3}
+      propertyPath: m_spookyTimeActivate.m_PersistentCalls.m_Calls.Array.data[6].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5816961436333878547, guid: 84cf1bb269e935544b7e458c2e77b241,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 84cf1bb269e935544b7e458c2e77b241, type: 3}
 --- !u!1 &236478181
@@ -1226,6 +1277,18 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!114 &348440060 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5734481689303218401, guid: 84cf1bb269e935544b7e458c2e77b241,
+    type: 3}
+  m_PrefabInstance: {fileID: 219265215}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4df8836daa326b545ade993028780325, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &370767066
 GameObject:
   m_ObjectHideFlags: 0

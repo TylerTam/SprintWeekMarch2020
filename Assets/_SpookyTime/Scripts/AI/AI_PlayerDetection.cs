@@ -63,7 +63,7 @@ public class AI_PlayerDetection : MonoBehaviour
         else
         {
 
-
+            
             Collider2D[] cols = Physics2D.OverlapCircleAll(transform.position, (m_spookyTimeManager.IsSpookyTimeActive()) ? m_spookyTimeDetectionRadius : m_detectionRange, m_detectionMask);
             bool currentTargetInBounds = false;
             foreach(Collider2D col in cols)
@@ -111,6 +111,7 @@ public class AI_PlayerDetection : MonoBehaviour
         m_lostPlayer = false;
         m_currentTarget = null;
         m_aiCont.SetPlayerTransform(null);
+        if (m_aiCont.IsStunned()) yield break;
         m_aiCont.ChangeState(AI_Controller.AIStates.WANDER);
     }
 
