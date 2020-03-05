@@ -1021,6 +1021,21 @@ PrefabInstance:
       propertyPath: m_aiSpawnChance
       value: 0.2
       objectReference: {fileID: 0}
+    - target: {fileID: 427907635980639285, guid: 84cf1bb269e935544b7e458c2e77b241,
+        type: 3}
+      propertyPath: m_maxAIOnScene
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 427907635980639285, guid: 84cf1bb269e935544b7e458c2e77b241,
+        type: 3}
+      propertyPath: m_increasePossibilityAmount
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 427907635980639285, guid: 84cf1bb269e935544b7e458c2e77b241,
+        type: 3}
+      propertyPath: m_maxPossibility
+      value: 0.8
+      objectReference: {fileID: 0}
     - target: {fileID: 5863671799586731998, guid: 84cf1bb269e935544b7e458c2e77b241,
         type: 3}
       propertyPath: m_playersDeathEvent.m_PersistentCalls.m_Calls.Array.size
@@ -1125,6 +1140,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_outOfLivesEvent.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5863671799586731998, guid: 84cf1bb269e935544b7e458c2e77b241,
+        type: 3}
+      propertyPath: m_playersDeathEvent.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: LoadSceneByIndex
+      objectReference: {fileID: 0}
+    - target: {fileID: 5863671799586731998, guid: 84cf1bb269e935544b7e458c2e77b241,
+        type: 3}
+      propertyPath: m_playersDeathEvent.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5816961436333878547, guid: 84cf1bb269e935544b7e458c2e77b241,
         type: 3}
