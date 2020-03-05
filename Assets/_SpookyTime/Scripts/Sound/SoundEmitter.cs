@@ -5,8 +5,14 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSource))]
 public class SoundEmitter : MonoBehaviour
 {
+
     private AudioSource m_aSource;
+
+    [Header("Default Sounds")]
     public List<Audioclips> m_allClips;
+    public bool m_hasSpookyTimeVariations;
+    public List<Audioclips> m_spookyTimeClips;
+    private SpookyTimeManager m_spookyTime;
     [System.Serializable]
     public struct Audioclips
     {
@@ -17,6 +23,10 @@ public class SoundEmitter : MonoBehaviour
     {
         m_aSource = GetComponent<AudioSource>();
     }
+    private void Start()
+    {
+        m_spookyTime = SpookyTimeManager.Instance;
+    }
 
     public void PlayClip()
     {
@@ -25,7 +35,7 @@ public class SoundEmitter : MonoBehaviour
         float random = Random.Range(0f, 1f);
         float currentProbablilty = 0;
         AudioClip currentClip = null;
-        foreach(Audioclips clip in m_allClips)
+        foreach(Audioclips clip in (m_spookyTime.IsSpookyTimeActive() ? m_spookyTimeClips : m_allClips))
         {
             if(random < clip.m_probablility + currentProbablilty)
             {
