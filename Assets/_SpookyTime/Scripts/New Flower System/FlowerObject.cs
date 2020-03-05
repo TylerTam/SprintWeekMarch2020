@@ -26,14 +26,19 @@ public class FlowerObject : MonoBehaviour
     public FlowerObjectSounds m_flowerSwapped;
     public FlowerObjectSounds m_flowerReturned;
 
+    public int m_flowerAwardScore;
+    private ScoreManager m_scoreManager;
+
+
     private void Start()
     {
         m_spookyManager = SpookyTimeManager.Instance;
-        
+        m_scoreManager = ScoreManager.Instance;
+
+
     }
     public void ResetFlower()
     {
-
         m_flowerManager.FlowerDropped();
         m_flowerVisual.transform.localPosition = Vector3.zero;
         transform.parent = null;
@@ -112,6 +117,7 @@ public class FlowerObject : MonoBehaviour
 
         if (Physics2D.OverlapCircle(transform.position, m_flowerRadius, m_safeZone) != null)
         {
+            m_scoreManager.ChangeScore(m_flowerAwardScore);
             ResetFlower();
             m_flowerReturned.Invoke();
             m_spookyManager.ChangeSpookyTime(false);

@@ -13,6 +13,8 @@ public class Flash : MonoBehaviour
     LineRenderer lr;
     [SerializeField] float flashTime;
     [SerializeField] int stunAward = 50;
+    [SerializeField] int spooktTimeStunAward = 50;
+    private SpookyTimeManager m_spookyTimeManager;
 
     public float m_flashDistance;
     public KeyCode m_flashKeycode;
@@ -22,6 +24,7 @@ public class Flash : MonoBehaviour
     {
         eMC = GetComponent<Entity_MovementController>();
         lr = GetComponent<LineRenderer>();
+        m_spookyTimeManager = SpookyTimeManager.Instance;
     }
 
 
@@ -69,7 +72,7 @@ public class Flash : MonoBehaviour
             {
                 ghostHit.collider.transform.parent.GetComponent<AI_Controller>().ChangeState(AI_Controller.AIStates.STUN);
 
-                sM.ChangeScore(stunAward);
+                sM.ChangeScore( (m_spookyTimeManager.IsSpookyTimeActive()) ?  spooktTimeStunAward:stunAward);
 
             }
         }

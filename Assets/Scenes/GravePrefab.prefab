@@ -133,7 +133,6 @@ MonoBehaviour:
   GraveCurrentHealth: 0
   GraveHealthPercentage: 0
   GraveAward: 0
-  HauntScoreMultiplier: 3.3
   isThisTreasureSpooky: 0
   SpookyTreasureRandomNumber: 0
   PercentChanceForSpookyTreasure: 50
@@ -181,6 +180,7 @@ MonoBehaviour:
   m_detectionLayer:
     serializedVersion: 2
     m_Bits: 1024
+  m_gravePoints: 1000
   m_debugging: 1
   m_gizmosColor1: {r: 0, g: 1, b: 0.19188643, a: 0.6627451}
 --- !u!58 &5345496185608336635
@@ -310,6 +310,8 @@ MonoBehaviour:
   m_allClips:
   - m_clip: {fileID: 8300000, guid: 4a784132340352642b31dabe4ba58fe3, type: 3}
     m_probablility: 0
+  m_hasSpookyTimeVariations: 0
+  m_spookyTimeClips: []
 --- !u!1 &4173449305837606032
 GameObject:
   m_ObjectHideFlags: 0

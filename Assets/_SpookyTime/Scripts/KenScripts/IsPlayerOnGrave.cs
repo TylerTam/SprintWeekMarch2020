@@ -19,7 +19,7 @@ public class IsPlayerOnGrave : MonoBehaviour
 
     bool isPlayerOnMe;
     [SerializeField] int GraveAward;
-    [SerializeField] float HauntScoreMultiplier;
+
 
     // 1 = 100%
     public bool isThisTreasureSpooky = false;
@@ -90,8 +90,10 @@ public class IsPlayerOnGrave : MonoBehaviour
         GraveHealthFill.fillAmount = GraveHealthPercentage;
     }    
 
+    [Header("Detection")]
     public float m_radius;
     public LayerMask m_detectionLayer;
+    public int m_gravePoints;
     [Header("Debugging")]
     public bool m_debugging;
     public Color m_gizmosColor1;
@@ -115,7 +117,7 @@ public class IsPlayerOnGrave : MonoBehaviour
     public void GraveBroken()
     {
 
-        Awarded = true;
+        m_scoreManager.m_currentScore += m_gravePoints;
 
         // check if this treasure is spooky or not
         if(isThisTreasureSpooky == true)
