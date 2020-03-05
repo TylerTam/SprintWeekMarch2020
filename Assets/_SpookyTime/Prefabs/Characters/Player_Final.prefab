@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a1634715f51dd740ba153beccca9e60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_hasDifferentWalkingAnims: 1
   m_animator: {fileID: 2470797420209243632}
   m_sRender: {fileID: 5308703970952199217}
   m_animTriggers:
@@ -326,6 +327,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de2881e35628f2146a14ec46f2d283e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_respawning: 0
   m_lerpTime: 0.25
   m_playerInputs:
     m_movementXAxis: Horizontal
@@ -690,3 +692,5 @@ MonoBehaviour:
   m_allClips:
   - m_clip: {fileID: 8300000, guid: c2b021ca722bffe499d54e6196c61b01, type: 3}
     m_probablility: 100
+  m_hasSpookyTimeVariations: 0
+  m_spookyTimeClips: []

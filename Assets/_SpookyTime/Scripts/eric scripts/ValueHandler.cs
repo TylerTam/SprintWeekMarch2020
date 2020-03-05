@@ -15,7 +15,7 @@ public class ValueHandler : MonoBehaviour
 
     private void Start()
     {
-        if (GetComponent<ShakeObject>()) sO = GetComponent<ShakeObject>(); print("shake found");
+        if (GetComponent<ShakeObject>()) sO = GetComponent<ShakeObject>(); 
     }
 
     public void Change()
@@ -24,7 +24,7 @@ public class ValueHandler : MonoBehaviour
         if (sO)
         {
             sO.StartShaking();
-            print("shake");
+
         }
     }
 

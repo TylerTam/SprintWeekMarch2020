@@ -6,6 +6,7 @@ using UnityEngine;
 public class EntityVisualEvent : UnityEngine.Events.UnityEvent { }
 public class EntityVisualController : MonoBehaviour
 {
+    public bool m_hasDifferentWalkingAnims = false;
     public Animator m_animator;
     public SpriteRenderer m_sRender;
     public AnimationTriggers m_animTriggers;
@@ -24,6 +25,7 @@ public class EntityVisualController : MonoBehaviour
 
     public void RotateSprite(Vector3 p_dir)
     {
+        if (!m_hasDifferentWalkingAnims) return;
         ResetTriggers();
         if (Mathf.Abs(p_dir.x) > 0)
         {
@@ -52,6 +54,7 @@ public class EntityVisualController : MonoBehaviour
     }
     public void ChangeWalkingState(bool p_activeState)
     {
+        if (!m_hasDifferentWalkingAnims) return;
         if (p_activeState)
         {
             m_startMoving.Invoke();
@@ -61,6 +64,7 @@ public class EntityVisualController : MonoBehaviour
 
     private void ResetTriggers()
     {
+        if (!m_hasDifferentWalkingAnims) return;
         m_animator.SetBool(m_animTriggers.m_sideAnim, false);
         m_animator.SetBool(m_animTriggers.m_upAnim, false);
         m_animator.SetBool(m_animTriggers.m_downAnim, false);
@@ -69,6 +73,7 @@ public class EntityVisualController : MonoBehaviour
 
     public void StartDigging()
     {
+
         m_animator.SetBool(m_animTriggers.m_diggingBool, true);
     }
 

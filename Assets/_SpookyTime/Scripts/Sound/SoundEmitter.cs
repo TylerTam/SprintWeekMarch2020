@@ -25,7 +25,7 @@ public class SoundEmitter : MonoBehaviour
     }
     private void Start()
     {
-        m_spookyTime = SpookyTimeManager.Instance;
+        
     }
 
     public void PlayClip()
@@ -35,7 +35,10 @@ public class SoundEmitter : MonoBehaviour
         float random = Random.Range(0f, 1f);
         float currentProbablilty = 0;
         AudioClip currentClip = null;
-        foreach(Audioclips clip in (m_spookyTime.IsSpookyTimeActive() ? m_spookyTimeClips : m_allClips))
+        if(m_spookyTime == null) { 
+m_spookyTime = SpookyTimeManager.Instance;
+        }
+        foreach (Audioclips clip in (m_spookyTime.IsSpookyTimeActive() ? m_spookyTimeClips : m_allClips))
         {
             if(random < clip.m_probablility + currentProbablilty)
             {
