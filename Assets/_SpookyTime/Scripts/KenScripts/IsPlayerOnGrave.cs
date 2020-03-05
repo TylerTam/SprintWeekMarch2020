@@ -117,7 +117,7 @@ public class IsPlayerOnGrave : MonoBehaviour
     public void GraveBroken()
     {
 
-        m_scoreManager.m_currentScore += m_gravePoints;
+
 
         // check if this treasure is spooky or not
         if(isThisTreasureSpooky == true)
@@ -128,7 +128,7 @@ public class IsPlayerOnGrave : MonoBehaviour
         /// add score
         if (SpookyTimeAcivated == false)
         {         
-            m_scoreManager.ChangeScore(GraveAward);
+            m_scoreManager.ChangeScore(m_gravePoints);
         }
 
         m_aiManager.SpawnAI(transform.position);

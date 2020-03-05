@@ -80,12 +80,12 @@ PrefabInstance:
     - target: {fileID: 8474759804641589522, guid: a2b188463c9f14542bf296651611ae7e,
         type: 3}
       propertyPath: m_flashKeycode
-      value: 115
+      value: 97
       objectReference: {fileID: 0}
     - target: {fileID: 9106878053758751119, guid: a2b188463c9f14542bf296651611ae7e,
         type: 3}
       propertyPath: m_digKey
-      value: 97
+      value: 115
       objectReference: {fileID: 0}
     - target: {fileID: 2470797420209243632, guid: a2b188463c9f14542bf296651611ae7e,
         type: 3}
