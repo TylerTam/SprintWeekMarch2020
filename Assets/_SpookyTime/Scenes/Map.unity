@@ -953,7 +953,7 @@ PrefabInstance:
     - target: {fileID: 477691560, guid: 84cf1bb269e935544b7e458c2e77b241, type: 3}
       propertyPath: m_spookyTimeBar
       value: 
-      objectReference: {fileID: 506700050}
+      objectReference: {fileID: 794587092}
     - target: {fileID: 477691560, guid: 84cf1bb269e935544b7e458c2e77b241, type: 3}
       propertyPath: m_spookyTimeActivate.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
@@ -1025,6 +1025,46 @@ PrefabInstance:
     - target: {fileID: 477691560, guid: 84cf1bb269e935544b7e458c2e77b241, type: 3}
       propertyPath: m_spookyTimeActivate.m_PersistentCalls.m_Calls.Array.data[8].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 477691560, guid: 84cf1bb269e935544b7e458c2e77b241, type: 3}
+      propertyPath: m_startSpookyTimer
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 477691560, guid: 84cf1bb269e935544b7e458c2e77b241, type: 3}
+      propertyPath: m_timeTillSpookyTime
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 477691560, guid: 84cf1bb269e935544b7e458c2e77b241, type: 3}
+      propertyPath: m_spookyImageColor.r
+      value: 0.18039216
+      objectReference: {fileID: 0}
+    - target: {fileID: 477691560, guid: 84cf1bb269e935544b7e458c2e77b241, type: 3}
+      propertyPath: m_spookyImageColor.g
+      value: 0.18039216
+      objectReference: {fileID: 0}
+    - target: {fileID: 477691560, guid: 84cf1bb269e935544b7e458c2e77b241, type: 3}
+      propertyPath: m_spookyImageColor.b
+      value: 0.18039216
+      objectReference: {fileID: 0}
+    - target: {fileID: 477691560, guid: 84cf1bb269e935544b7e458c2e77b241, type: 3}
+      propertyPath: m_spookyImageColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 477691560, guid: 84cf1bb269e935544b7e458c2e77b241, type: 3}
+      propertyPath: m_spookyImageColorST.r
+      value: 0.7075472
+      objectReference: {fileID: 0}
+    - target: {fileID: 477691560, guid: 84cf1bb269e935544b7e458c2e77b241, type: 3}
+      propertyPath: m_spookyImageColorST.g
+      value: 0.7075472
+      objectReference: {fileID: 0}
+    - target: {fileID: 477691560, guid: 84cf1bb269e935544b7e458c2e77b241, type: 3}
+      propertyPath: m_spookyImageColorST.b
+      value: 0.7075472
+      objectReference: {fileID: 0}
+    - target: {fileID: 477691560, guid: 84cf1bb269e935544b7e458c2e77b241, type: 3}
+      propertyPath: m_spookyImageColorST.a
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 151309870791284226, guid: 84cf1bb269e935544b7e458c2e77b241,
         type: 3}
@@ -1238,18 +1278,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 500108541}
   m_CullTransparentMesh: 0
---- !u!114 &506700050 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2569340748717613531, guid: 22e344e206ec9674aa5cf58e284d2cae,
-    type: 3}
-  m_PrefabInstance: {fileID: 1968614845}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &646630182
 GameObject:
   m_ObjectHideFlags: 0
@@ -1346,6 +1374,81 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &794587090
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 794587091}
+  - component: {fileID: 794587093}
+  - component: {fileID: 794587092}
+  m_Layer: 5
+  m_Name: Spooky Time Bar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &794587091
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 794587090}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1719697936}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -268}
+  m_SizeDelta: {x: 700, y: 96}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &794587092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 794587090}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.1792453, g: 0.1792453, b: 0.1792453, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: e04260fd7922bbb48b2bcdaf8ba4423d, type: 3}
+  m_Type: 3
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 1
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &794587093
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 794587090}
+  m_CullTransparentMesh: 0
 --- !u!1 &816794779 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1513700314030289115, guid: 126629f1d01801844be8e43e0c27cedd,
@@ -2189,12 +2292,12 @@ PrefabInstance:
     - target: {fileID: 295823656908315207, guid: 22e344e206ec9674aa5cf58e284d2cae,
         type: 3}
       propertyPath: colors.key2.g
-      value: 0.944716
+      value: 0.96503884
       objectReference: {fileID: 0}
     - target: {fileID: 295823656908315207, guid: 22e344e206ec9674aa5cf58e284d2cae,
         type: 3}
       propertyPath: colors.key2.b
-      value: 0
+      value: 0.36320752
       objectReference: {fileID: 0}
     - target: {fileID: 295823656908315207, guid: 22e344e206ec9674aa5cf58e284d2cae,
         type: 3}
@@ -2310,12 +2413,12 @@ PrefabInstance:
     - target: {fileID: 2569340748169486959, guid: 22e344e206ec9674aa5cf58e284d2cae,
         type: 3}
       propertyPath: colors.key2.g
-      value: 0.944716
+      value: 0.96503884
       objectReference: {fileID: 0}
     - target: {fileID: 2569340748169486959, guid: 22e344e206ec9674aa5cf58e284d2cae,
         type: 3}
       propertyPath: colors.key2.b
-      value: 0
+      value: 0.36320752
       objectReference: {fileID: 0}
     - target: {fileID: 2569340748169486959, guid: 22e344e206ec9674aa5cf58e284d2cae,
         type: 3}
@@ -2348,6 +2451,26 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: e86e1a7fe20f0524594f915442b0d877,
         type: 3}
+    - target: {fileID: 295823656015848055, guid: 22e344e206ec9674aa5cf58e284d2cae,
+        type: 3}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 295823656015848055, guid: 22e344e206ec9674aa5cf58e284d2cae,
+        type: 3}
+      propertyPath: m_Color.g
+      value: 0.9629671
+      objectReference: {fileID: 0}
+    - target: {fileID: 295823656015848055, guid: 22e344e206ec9674aa5cf58e284d2cae,
+        type: 3}
+      propertyPath: m_Color.b
+      value: 0.3254717
+      objectReference: {fileID: 0}
+    - target: {fileID: 295823656015848055, guid: 22e344e206ec9674aa5cf58e284d2cae,
+        type: 3}
+      propertyPath: m_FillMethod
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 295823655740938783, guid: 22e344e206ec9674aa5cf58e284d2cae,
         type: 3}
       propertyPath: m_Sprite
@@ -2430,6 +2553,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 295823656015848052, guid: 22e344e206ec9674aa5cf58e284d2cae,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2569340749184668886, guid: 22e344e206ec9674aa5cf58e284d2cae,
         type: 3}
@@ -2562,6 +2690,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Grid
+      objectReference: {fileID: 0}
+    - target: {fileID: 1513700312400714697, guid: 126629f1d01801844be8e43e0c27cedd,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1513700313400142308, guid: 126629f1d01801844be8e43e0c27cedd,
         type: 3}

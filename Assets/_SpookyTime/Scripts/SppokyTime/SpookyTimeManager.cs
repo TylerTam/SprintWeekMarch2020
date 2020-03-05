@@ -14,12 +14,17 @@ public class SpookyTimeManager : MonoBehaviour
     public UnityEngine.UI.Image m_spookyTimeBar;
 
     public static SpookyTimeManager Instance;
+
+    public float m_startSpookyTimer;
     private bool m_spookyTimeActive;
+
+    public Color m_spookyImageColor, m_spookyImageColorST;
 
     private void Awake()
     {
         Instance = this;
         StartCoroutine(SpookyCountdown());
+        UpdateUI(0);
     }
 
     private void UpdateUI(float p_percent)
@@ -37,11 +42,16 @@ public class SpookyTimeManager : MonoBehaviour
         float timer = 0;
         while (timer < m_timeTillSpookyTime)
         {
+            if(timer > m_startSpookyTimer)
+            {
+                m_spookyTimeBar.color = m_spookyImageColor;
+                UpdateUI((timer - m_startSpookyTimer) / (m_timeTillSpookyTime - m_startSpookyTimer));
+            }
             timer += Time.deltaTime;
-            UpdateUI(timer / m_timeTillSpookyTime);
             yield return null;
         }
 
+        m_spookyTimeBar.color = m_spookyImageColorST;
         m_spookyTimeActivate.Invoke();
         m_spookyTimeActive = true;
         StartCoroutine(SpookyTimeDuration());
@@ -67,6 +77,10 @@ public class SpookyTimeManager : MonoBehaviour
 
     public void ChangeSpookyTime(bool p_activeState)
     {
+        if (!p_activeState)
+        {
+            UpdateUI(0);
+        }
         m_spookyTimeActive = p_activeState;
     }
 }
