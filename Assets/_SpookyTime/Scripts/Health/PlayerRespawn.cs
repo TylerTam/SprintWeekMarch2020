@@ -35,19 +35,22 @@ public class PlayerRespawn : MonoBehaviour
     }
     public void OnDied()
     {
+
         m_isDead = true;
         m_playerHealth.TakeDamage(this);
         m_playerInput.ChangeInputState(false);
-        
+        m_playerInput.m_respawning = true;
     }
 
     public void OtherPlayerDied()
     {
+        
         m_playerDetectionCol.enabled = false;
         m_playerCollider.enabled = false;
         m_visual.SetActive(false);
         m_isDead = true;
         m_playerInput.ChangeInputState(false);
+        m_playerInput.m_respawning = true;
     }
 
     private IEnumerator RespawnMe()
@@ -89,6 +92,7 @@ public class PlayerRespawn : MonoBehaviour
         
         m_visual.SetActive(true);
         transform.position = m_spawnPoint.position;
+        m_playerInput.m_respawning = false;
         m_playerInput.ChangeInputState(true);
         m_respawnEvents.m_spawnEvent.Invoke();
         m_movementController.enabled = true;

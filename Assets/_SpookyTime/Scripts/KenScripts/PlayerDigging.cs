@@ -56,4 +56,5 @@ public class PlayerDigging : MonoBehaviour
     {
         m_canDig = p_activeState;
     }
+
 }

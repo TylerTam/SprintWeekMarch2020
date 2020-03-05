@@ -6,6 +6,7 @@ public class PlayerInput : MonoBehaviour
 {
 
     private bool m_enableInput = true;
+    public bool m_respawning;
     [System.Serializable]
     public class PlayerInputAxis
     {
@@ -32,6 +33,7 @@ public class PlayerInput : MonoBehaviour
 
     public void ChangeInputState(bool p_activeState)
     {
+        if (m_respawning) return;
         m_enableInput = p_activeState;
     }
 }

@@ -6,6 +6,7 @@ using UnityEngine;
 public class PlayerHealthEvent : UnityEngine.Events.UnityEvent { }
 public class PlayerHealth : MonoBehaviour
 {
+    public int m_maxHealth = 5;
     public int m_health;
     public int m_defaultDamage,m_spookyTimeDamage;
 
@@ -41,6 +42,7 @@ public class PlayerHealth : MonoBehaviour
     }
     private void Start()
     {
+        m_health = m_maxHealth;
         m_spookyTimeManager = SpookyTimeManager.Instance;
     }
 
@@ -82,12 +84,12 @@ public class PlayerHealth : MonoBehaviour
         m_coinText.text = (m_numberOfCoins - m_currentnumberOfCoins).ToString();
         if (Input.GetKeyDown(m_coinKeycode) || Input.GetKeyDown(m_coinKeycode2))
         {
-            print("Coin Inpu");
             m_currentnumberOfCoins++;
             if (m_currentnumberOfCoins >= m_numberOfCoins)
             {
                 m_currentnumberOfCoins = 0;
                 ResetPlayers();
+                m_health = m_maxHealth;
                 m_continuePlayEvent.Invoke();
             }
             else
