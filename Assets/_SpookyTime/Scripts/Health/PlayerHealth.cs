@@ -46,6 +46,9 @@ public class PlayerHealth : MonoBehaviour
 
     private IEnumerator DeathDelay()
     {
+
+        m_coinText.text = m_numberOfCoins.ToString();
+        m_countdownText.text = ((int)m_waitTime).ToString();
         if (m_spookyTimeManager.IsSpookyTimeActive())
         {
             m_jumpscareEvent.Invoke();
