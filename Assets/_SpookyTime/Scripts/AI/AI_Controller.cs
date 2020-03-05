@@ -102,7 +102,7 @@ public class AI_Controller : MonoBehaviour
                 m_path = m_navAgent.CreatePath((Vector2)transform.position, (Vector2)m_currentPatrolPoint.position);
                 break;
             case AIStates.SPAWING:
-                StartCoroutine(GhostSpawn());
+                m_spawnCoroutine = StartCoroutine(GhostSpawn());
                 break;
             case AIStates.STUN:
                 m_sRend.color = m_stunnedColor;
@@ -112,6 +112,7 @@ public class AI_Controller : MonoBehaviour
                 break;
         }
     }
+    private Coroutine m_spawnCoroutine;
 
     public bool IsStunned()
     {
@@ -195,18 +196,22 @@ public class AI_Controller : MonoBehaviour
             timer += Time.deltaTime;
             yield return null;
         }
-        if (IsStunned()) yield break;
+        
         ChangeState(AIStates.WANDER);
     }
 
     private IEnumerator GhostStun()
     {
+        if (m_spawnCoroutine != null) {
+            StopCoroutine(m_spawnCoroutine);
+        }
         float timer = 0;
         while(timer < m_stunTime){
             timer += Time.deltaTime;
             yield return null;
         }
         m_aiEvents.m_aiUnStunned.Invoke();  
+
         ChangeState(AIStates.WANDER);
     }
 
