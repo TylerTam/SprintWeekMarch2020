@@ -13,6 +13,8 @@ public class SoundEmitter : MonoBehaviour
     public bool m_hasSpookyTimeVariations;
     public List<Audioclips> m_spookyTimeClips;
     private SpookyTimeManager m_spookyTime;
+    public bool m_playSound = true;
+
     [System.Serializable]
     public struct Audioclips
     {
@@ -26,6 +28,8 @@ public class SoundEmitter : MonoBehaviour
 
     public void PlayClip()
     {
+        if (!m_playSound) return;
+        print("Play");
         m_aSource.Stop();
 
         float random = Random.Range(0f, 1f);

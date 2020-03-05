@@ -68,6 +68,10 @@ public class AI_Manager : MonoBehaviour
         {
             m_currentAICount++;
             GameObject newGhost = Instantiate(m_aiPrefab, m_spawnLocations[i].position, Quaternion.identity);
+            if (i > 0)
+            {
+                newGhost.GetComponent<SoundEmitter>().m_playSound = false;
+            }
         }
     }
     public void SpawnAI( Vector3 p_spawnLocation)
