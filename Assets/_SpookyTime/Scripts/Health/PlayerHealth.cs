@@ -90,6 +90,8 @@ public class PlayerHealth : MonoBehaviour
                 m_currentnumberOfCoins = 0;
                 ResetPlayers();
                 m_health = m_maxHealth;
+                GameObject.Find("Health").GetComponent<ValueHandler>().ValueSet(m_health);
+
                 m_continuePlayEvent.Invoke();
             }
             else
