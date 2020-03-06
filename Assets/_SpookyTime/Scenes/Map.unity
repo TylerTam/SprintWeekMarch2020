@@ -142,11 +142,6 @@ PrefabInstance:
       propertyPath: lightUI
       value: 
       objectReference: {fileID: 104938576}
-    - target: {fileID: 8474759804641589522, guid: a2b188463c9f14542bf296651611ae7e,
-        type: 3}
-      propertyPath: m_flashKeycode
-      value: 305
-      objectReference: {fileID: 0}
     - target: {fileID: 9162925000945978575, guid: a2b188463c9f14542bf296651611ae7e,
         type: 3}
       propertyPath: m_spawnPoint
@@ -247,11 +242,6 @@ PrefabInstance:
       propertyPath: m_spawnPoint
       value: 
       objectReference: {fileID: 977482281}
-    - target: {fileID: 9106878053758751119, guid: a2b188463c9f14542bf296651611ae7e,
-        type: 3}
-      propertyPath: m_digKey
-      value: 307
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a2b188463c9f14542bf296651611ae7e, type: 3}
 --- !u!1 &51802998
