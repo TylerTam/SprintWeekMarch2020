@@ -1416,7 +1416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93c91dd39f963ae459f2aeb463d14171, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_player1Coin: 51
+  m_player1Coin: 99
   m_player2Coin: 52
   m_coinInserted:
     m_PersistentCalls:
@@ -1452,6 +1452,7 @@ MonoBehaviour:
       PublicKeyToken=null
   m_delay: 1
   m_canvasGroup: {fileID: 1468474278}
+  m_fade: 0
 --- !u!4 &1248653631
 Transform:
   m_ObjectHideFlags: 0
