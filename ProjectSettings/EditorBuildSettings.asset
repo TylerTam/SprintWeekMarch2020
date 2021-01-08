@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/_SpookyTime/Scenes/TitleScreen.unity
     guid: 4cde8714ec97c844998f5d7c9b0b4910
   - enabled: 1
+    path: Assets/_SpookyTime/Scenes/Instructions.unity
+    guid: 59e2800ca3d929c42b2e329a0b1ead2d
+  - enabled: 1
     path: Assets/_SpookyTime/Scenes/Map.unity
     guid: 1f72a8dd5cbd13b4a8a6aab93cf8b051
   m_configObjects: {}

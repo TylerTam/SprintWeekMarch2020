@@ -21,7 +21,8 @@ public class PlayerRespawn : MonoBehaviour
     public RespawnEvents m_respawnEvents;
 
     public GameObject m_visual;
-
+    public SpriteRenderer m_sRend;
+    public Color m_diedColor;
     public bool m_isDead;
     [System.Serializable]
     public struct RespawnEvents
@@ -40,6 +41,7 @@ public class PlayerRespawn : MonoBehaviour
         m_playerHealth.TakeDamage(this);
         m_playerInput.ChangeInputState(false);
         m_playerInput.m_respawning = true;
+        m_sRend.color = m_diedColor;
     }
 
     public void OtherPlayerDied()
@@ -99,5 +101,6 @@ public class PlayerRespawn : MonoBehaviour
         m_playerDetectionCol.enabled = true;
         m_playerCollider.enabled = true;
         m_isDead = false;
+        m_sRend.color = Color.white;
     }
 }
